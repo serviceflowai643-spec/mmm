@@ -1,0 +1,6 @@
+{
+  "name": "Lords' Barbering",
+  "description": "Ultra-Premium Luxury Barbering at 7 Grand Arcade, Leeds",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
