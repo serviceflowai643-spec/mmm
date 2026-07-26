@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Coffee, ShieldCheck, Scissors, Sparkles, MapPin, HeartHandshake, Navigation } from 'lucide-react';
+import { Coffee, ShieldCheck, Scissors, Sparkles, MapPin, HeartHandshake } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/shopData';
 
 export const AboutSection: React.FC = () => {
@@ -43,7 +43,7 @@ export const AboutSection: React.FC = () => {
             className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#171717] border border-[#C9A227]/30 text-xs text-[#C9A227] font-semibold tracking-[0.2em] uppercase"
           >
             <Sparkles className="w-3.5 h-3.5" />
-            <span>About Scissorhands Barber</span>
+            <span>About Precision Barbers</span>
           </motion.div>
 
           <motion.h2
@@ -53,7 +53,7 @@ export const AboutSection: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="font-cinzel text-3xl sm:text-5xl font-bold uppercase tracking-[0.05em] text-white"
           >
-            Professional Barbering. <span className="text-gold-gradient">Fast & Friendly Service.</span>
+            Precision Cuts. <span className="text-gold-gradient">Premium Style.</span>
           </motion.h2>
 
           <motion.p
@@ -63,7 +63,7 @@ export const AboutSection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base sm:text-lg text-[#CFCFCF] font-light leading-relaxed"
           >
-            Scissorhands Barber is a highly rated barbershop in Leeds, trusted by students, professionals and local residents for delivering high-quality haircuts at affordable prices.
+            Precision Barbers is one of Harehills' trusted barbershops, known for delivering high-quality haircuts, sharp skin fades and professional beard grooming in a welcoming atmosphere.
           </motion.p>
         </div>
 
@@ -83,21 +83,21 @@ export const AboutSection: React.FC = () => {
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
-                    alt="Scissorhands Barber Shop Interior"
+                    alt="Precision Barbers Shop Interior"
                     className="w-full h-64 sm:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Leeds City Centre</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Harehills, Leeds</span>
                 </div>
 
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=80"
-                    alt="Friendly Team at Scissorhands Barber"
+                    alt="Friendly Team at Precision Barbers"
                     className="w-full h-44 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Friendly Team</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Welcoming Atmosphere</span>
                 </div>
               </div>
 
@@ -105,29 +105,29 @@ export const AboutSection: React.FC = () => {
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80"
-                    alt="Precision Haircut & Skin Fade"
+                    alt="Sharp Skin Fade"
                     className="w-full h-44 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Precision Skin Fades</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Sharp Skin Fades</span>
                 </div>
 
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
-                    alt="31a Great George St Location"
+                    alt="107 Roundhay Rd Location"
                     className="w-full h-64 sm:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">LS1 3BB</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">LS8 5AJ</span>
                 </div>
               </div>
             </div>
 
             {/* Floating Gold Emblem Badge */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 p-5 rounded-2xl glass-card-gold gold-border-glow text-center shadow-2xl">
-              <span className="block font-cinzel text-3xl font-black text-gold-gradient">4.8★</span>
-              <span className="block text-[10px] uppercase tracking-[0.2em] text-[#FAFAFA] font-bold mt-1">272 Reviews</span>
+              <span className="block font-cinzel text-3xl font-black text-gold-gradient">4.6★</span>
+              <span className="block text-[10px] uppercase tracking-[0.2em] text-[#FAFAFA] font-bold mt-1">127 Reviews</span>
             </div>
           </motion.div>
 
@@ -141,37 +141,25 @@ export const AboutSection: React.FC = () => {
           >
             <div className="space-y-4">
               <h3 className="font-cinzel text-2xl sm:text-3xl font-bold text-white">
-                Trusted Barbershop in Central Leeds
+                Trusted Barbershop in Harehills, Leeds
               </h3>
               <p className="text-[#CFCFCF] text-sm sm:text-base leading-relaxed font-light">
-                Scissorhands Barber is a highly rated barbershop in Leeds, trusted by students, professionals and local residents for delivering high-quality haircuts at affordable prices.
+                Precision Barbers is one of Harehills' trusted barbershops, known for delivering high-quality haircuts, sharp skin fades and professional beard grooming in a welcoming atmosphere.
               </p>
               <p className="text-[#CFCFCF] text-sm sm:text-base leading-relaxed font-light">
-                Known for its friendly team, fast service and attention to detail, the shop has earned a 4.8-star rating from 272 satisfied customers.
+                With a 4.6-star Google rating from 127 satisfied customers, our experienced barbers are committed to helping every client look and feel their best.
               </p>
             </div>
 
             <div className="p-6 rounded-2xl bg-[#171717]/80 border border-[#C9A227]/30 space-y-3">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <div className="flex items-center space-x-3">
-                  <div className="p-2 rounded-lg bg-[#C9A227]/10 text-[#C9A227] shrink-0">
-                    <MapPin className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-sm text-white uppercase tracking-wider">31a Great George St, Leeds LS1 3BB</h4>
-                    <p className="text-xs text-[#CFCFCF]">Conveniently located in the heart of Leeds</p>
-                  </div>
+              <div className="flex items-center space-x-3">
+                <div className="p-2 rounded-lg bg-[#C9A227]/10 text-[#C9A227] shrink-0">
+                  <MapPin className="w-5 h-5" />
                 </div>
-
-                <a
-                  href={BUSINESS_INFO.googleMapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-[#090909] border border-[#C9A227]/40 text-[#C9A227] hover:bg-[#C9A227] hover:text-[#090909] transition-all duration-300 shrink-0 self-start sm:self-auto"
-                >
-                  <Navigation className="w-3.5 h-3.5" />
-                  <span>Get Directions</span>
-                </a>
+                <div>
+                  <h4 className="font-bold text-sm text-white uppercase tracking-wider">107 Roundhay Rd, Harehills, Leeds LS8 5AJ</h4>
+                  <p className="text-xs text-[#CFCFCF]">Conveniently located in Harehills, Leeds</p>
+                </div>
               </div>
             </div>
 

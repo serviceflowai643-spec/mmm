@@ -55,10 +55,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             </div>
             <div>
               <span className="block font-cinzel text-lg sm:text-xl font-bold tracking-[0.15em] uppercase text-white group-hover:text-gold-gradient transition-colors">
-                SCISSORHANDS
+                PRECISION
               </span>
               <span className="block text-[9px] uppercase tracking-[0.3em] text-[#C9A227] font-semibold -mt-1">
-                BARBER • LEEDS
+                BARBERS • LEEDS
               </span>
             </div>
           </a>

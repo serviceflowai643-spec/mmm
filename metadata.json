@@ -1,6 +1,6 @@
 {
-  "name": "Scissorhands Barber",
-  "description": "Professional Barbering in the Heart of Leeds",
+  "name": "Precision Barbers",
+  "description": "Precision Cuts. Premium Style. Trusted Barbers in Leeds.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

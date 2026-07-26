@@ -64,6 +64,7 @@ export interface BusinessInfo {
   city: string;
   phone: string;
   email: string;
+  website?: string;
   instagram: string;
   booksyUrl: string;
   googleMapsUrl: string;

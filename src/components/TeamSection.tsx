@@ -65,7 +65,7 @@ export const TeamSection: React.FC<TeamSectionProps> = ({ onSelectBarber }) => {
                 <div className="relative h-80 sm:h-96 w-full overflow-hidden bg-[#090909]">
                   <img
                     src={barber.image}
-                    alt={`${barber.name} - ${barber.role} at Lords' Barbering Leeds`}
+                    alt={`${barber.name} - ${barber.role} at Precision Barbers Leeds`}
                     className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#171717] via-transparent to-transparent opacity-90" />

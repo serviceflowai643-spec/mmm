@@ -95,7 +95,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
             </h2>
 
             <p className="text-xs sm:text-sm text-[#CFCFCF] font-light">
-              Reserve your seat at 31a Great George St, Leeds with our expert barbers.
+              Reserve your seat at 107 Roundhay Rd, Harehills, Leeds with our expert barbers.
             </p>
 
             {/* Direct Booksy Link Option */}
@@ -186,7 +186,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                   </div>
                   <div className="flex justify-between">
                     <span className="text-[#CFCFCF]">Location:</span>
-                    <span className="text-white">31a Great George St, Leeds LS1 3BB</span>
+                    <span className="text-white">107 Roundhay Rd, Harehills, Leeds LS8 5AJ</span>
                   </div>
                 </div>
 

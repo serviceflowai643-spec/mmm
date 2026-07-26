@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Calendar, Phone, Navigation, Instagram, MessageSquare, X } from 'lucide-react';
+import { Calendar, Phone, Instagram, MessageSquare, X } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/shopData';
 
 interface FloatingActionButtonProps {
@@ -47,14 +47,6 @@ export const FloatingActionButton: React.FC<FloatingActionButtonProps> = ({ onOp
       icon: Phone,
       action: () => {
         window.location.href = `tel:${BUSINESS_INFO.phone}`;
-      }
-    },
-    {
-      id: 'directions',
-      label: 'Get Directions',
-      icon: Navigation,
-      action: () => {
-        window.open(BUSINESS_INFO.googleMapsUrl, '_blank');
       }
     },
     {

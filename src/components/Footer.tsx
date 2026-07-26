@@ -21,16 +21,16 @@ export const Footer: React.FC = () => {
               </div>
               <div>
                 <span className="block font-cinzel text-lg font-bold uppercase tracking-wider text-white">
-                  Scissorhands Barber
+                  Precision Barbers
                 </span>
                 <span className="block text-[9px] uppercase tracking-[0.25em] text-[#C9A227]">
-                  LEEDS • LS1 3BB
+                  LEEDS • LS8 5AJ
                 </span>
               </div>
             </div>
 
             <p className="text-xs text-[#CFCFCF] font-light leading-relaxed">
-              Professional Barbering in the Heart of Leeds. Premium haircuts, modern skin fades, and expert beard grooming at 31a Great George St.
+              Precision Cuts. Premium Style. Trusted Barbers in Leeds. High-quality haircuts, sharp skin fades, and expert beard grooming at 107 Roundhay Rd, Harehills.
             </p>
 
             <a
@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
               className="inline-flex items-center space-x-2 text-xs text-[#C9A227] hover:underline"
             >
               <Instagram className="w-4 h-4" />
-              <span>@scissorhandsleeds</span>
+              <span>@precision_barber1</span>
             </a>
           </div>
 
@@ -86,10 +86,10 @@ export const Footer: React.FC = () => {
               Shop Hours
             </h4>
             <div className="space-y-1 text-xs text-[#CFCFCF] font-mono">
-              <p>Mon - Wed: 09:00 - 18:00</p>
+              <p>Mon - Wed: 09:00 - 18:30</p>
               <p>Thu - Fri: 09:00 - 19:00</p>
-              <p>Sat: 08:30 - 17:30</p>
-              <p className="text-red-400">Sun: Closed</p>
+              <p>Sat: 08:30 - 18:00</p>
+              <p>Sun: 10:00 - 16:00</p>
             </div>
           </div>
 
@@ -97,7 +97,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#CFCFCF]/60 space-y-4 sm:space-y-0">
-          <p>© {new Date().getFullYear()} Scissorhands Barber Leeds. All rights reserved. 31a Great George St, LS1 3BB.</p>
+          <p>© {new Date().getFullYear()} Precision Barbers Leeds. All rights reserved. 107 Roundhay Rd, Harehills, LS8 5AJ.</p>
 
           <button
             onClick={scrollToTop}

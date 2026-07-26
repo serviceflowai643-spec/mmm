@@ -47,7 +47,7 @@ export const GallerySection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base text-[#CFCFCF] font-light"
           >
-            A visual showcase of real craftsmanship, friendly atmosphere, and everyday life at 31a Great George St, Leeds.
+            A visual showcase of real craftsmanship, friendly atmosphere, and everyday life at 107 Roundhay Rd, Harehills, Leeds.
           </motion.p>
         </div>
 

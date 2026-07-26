@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { BUSINESS_INFO } from '../data/shopData';
-import { MapPin, Phone, Mail, Clock, Instagram, Send, CheckCircle2, Navigation } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Instagram, Send, CheckCircle2 } from 'lucide-react';
 
 export const ContactSection: React.FC = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -54,7 +54,7 @@ export const ContactSection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base text-[#CFCFCF] font-light max-w-xl mx-auto"
           >
-            Located at 31a Great George St in Leeds LS1 3BB. Walk-ins subject to availability; appointments recommended.
+            Located at 107 Roundhay Rd, Harehills, Leeds LS8 5AJ. Walk-ins subject to availability; appointments recommended.
           </motion.p>
         </div>
 
@@ -81,17 +81,6 @@ export const ContactSection: React.FC = () => {
                 <p>{BUSINESS_INFO.city}, {BUSINESS_INFO.postcode}</p>
                 <p>United Kingdom</p>
               </div>
-
-              <a
-                href={BUSINESS_INFO.googleMapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#090909] border border-[#C9A227]/40 text-[#C9A227] hover:bg-[#C9A227] hover:text-[#090909] transition-all duration-300"
-                id="get-directions-btn"
-              >
-                <Navigation className="w-3.5 h-3.5" />
-                <span>Get Directions on Google Maps</span>
-              </a>
             </div>
 
             {/* Contact Phone & Instagram */}
@@ -122,7 +111,7 @@ export const ContactSection: React.FC = () => {
                   className="flex items-center space-x-3 text-[#CFCFCF] hover:text-[#C9A227] transition-colors"
                 >
                   <Instagram className="w-4 h-4 text-[#C9A227]" />
-                  <span>@scissorhandsleeds</span>
+                  <span>@precision_barber1</span>
                 </a>
               </div>
             </div>
@@ -157,8 +146,8 @@ export const ContactSection: React.FC = () => {
             {/* Interactive Map Embed */}
             <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl h-80 relative bg-[#171717]">
               <iframe
-                title="Scissorhands Barber Location Map"
-                src="https://maps.google.com/maps?q=31a+Great+George+St,+Leeds+LS1+3BB&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                title="Precision Barbers Location Map"
+                src="https://maps.google.com/maps?q=107+Roundhay+Rd,+Harehills,+Leeds+LS8+5AJ&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(0.9) invert(0.9) contrast(1.2)' }}
@@ -166,8 +155,8 @@ export const ContactSection: React.FC = () => {
                 loading="lazy"
               />
               <div className="absolute top-4 left-4 p-3 rounded-xl bg-[#090909]/90 backdrop-blur-md border border-[#C9A227]/40 text-xs">
-                <p className="font-bold text-white">Scissorhands Barber</p>
-                <p className="text-[10px] text-[#C9A227]">31a Great George St, Leeds LS1 3BB</p>
+                <p className="font-bold text-white">Precision Barbers</p>
+                <p className="text-[10px] text-[#C9A227]">107 Roundhay Rd, Harehills, Leeds LS8 5AJ</p>
               </div>
             </div>
 
