@@ -1,6 +1,6 @@
 {
-  "name": "Precision Barbers",
-  "description": "Precision Cuts. Premium Style. Trusted Barbers in Leeds.",
+  "name": "HYDE PARK BARBERS",
+  "description": "Premium Barbering Experience in Woodhouse, Leeds",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

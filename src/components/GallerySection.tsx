@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { GALLERY } from '../data/shopData';
+import { GALLERY, BUSINESS_INFO } from '../data/shopData';
 import { GalleryItem } from '../types';
-import { Camera, Maximize2, X, MapPin } from 'lucide-react';
+import { Camera, Maximize2, X, MapPin, Instagram, ExternalLink } from 'lucide-react';
 
 export const GallerySection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('All');
@@ -47,7 +47,7 @@ export const GallerySection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base text-[#CFCFCF] font-light"
           >
-            A visual showcase of real craftsmanship, friendly atmosphere, and everyday life at 107 Roundhay Rd, Harehills, Leeds.
+            A visual showcase of real craftsmanship, friendly atmosphere, and everyday life at 11 Hyde Park Corner, Woodhouse, Leeds.
           </motion.p>
         </div>
 
@@ -69,7 +69,7 @@ export const GallerySection: React.FC = () => {
         </div>
 
         {/* Gallery Grid */}
-        <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <AnimatePresence mode="popLayout">
             {filteredItems.map((item) => (
               <motion.div
@@ -109,6 +109,21 @@ export const GallerySection: React.FC = () => {
             ))}
           </AnimatePresence>
         </motion.div>
+
+        {/* Prominent Follow Us on Instagram button */}
+        <div className="mt-12 text-center">
+          <a
+            href={BUSINESS_INFO.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center space-x-3 px-8 py-3.5 rounded-full font-bold text-xs uppercase tracking-wider bg-gradient-to-r from-[#E1306C] via-[#FD1D1D] to-[#F56040] text-white hover:brightness-110 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
+            id="gallery-instagram-btn"
+          >
+            <Instagram className="w-4 h-4" />
+            <span>Follow Us on Instagram (@hydeparkbarbers)</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
 
         {/* Lightbox Modal */}
         <AnimatePresence>

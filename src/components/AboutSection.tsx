@@ -1,29 +1,29 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Coffee, ShieldCheck, Scissors, Sparkles, MapPin, HeartHandshake } from 'lucide-react';
+import { Coffee, ShieldCheck, Scissors, Sparkles, MapPin, HeartHandshake, Star } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/shopData';
 
 export const AboutSection: React.FC = () => {
   const highlights = [
     {
       icon: Scissors,
-      title: 'Traditional Craftsmanship',
-      description: 'Classic barbering techniques refined over decades, paired with modern style precision.'
+      title: 'Precision Barbering',
+      description: 'Expert skin fades, classic scissor haircuts, restyles, and razor line-ups tailored to your style.'
     },
     {
       icon: HeartHandshake,
       title: 'Welcoming Atmosphere',
-      description: 'Located in the historic Grand Arcade. A warm, relaxed space where every client is treated like family.'
+      description: 'Relaxed and friendly environment where every client is greeted with warm, attentive hospitality.'
     },
     {
-      icon: Coffee,
-      title: 'Artisan Coffee Bar',
-      description: 'Complimentary freshly roasted espresso, craft beverages & single malts with every service.'
+      icon: Star,
+      title: 'Top Customer Service',
+      description: 'Proudly holding a 4.9★ rating from 113+ Google reviews for exceptional service and care.'
     },
     {
       icon: ShieldCheck,
-      title: 'Meticulous Attention',
-      description: 'We never rush. Every consultation, cut, fade and beard sculpt receives 100% focused devotion.'
+      title: 'Attention to Detail',
+      description: 'We take time with every appointment to ensure clean lines, sharp gradients, and 100% satisfaction.'
     }
   ];
 
@@ -40,10 +40,10 @@ export const AboutSection: React.FC = () => {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#171717] border border-[#C9A227]/30 text-xs text-[#C9A227] font-semibold tracking-[0.2em] uppercase"
+            className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#171717] border border-[#C9A227]/30 text-xs text-[#C9A227] font-semibold tracking-[0.2em] uppercase"
           >
             <Sparkles className="w-3.5 h-3.5" />
-            <span>About Precision Barbers</span>
+            <span>About HYDE PARK BARBERS</span>
           </motion.div>
 
           <motion.h2
@@ -53,7 +53,7 @@ export const AboutSection: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="font-cinzel text-3xl sm:text-5xl font-bold uppercase tracking-[0.05em] text-white"
           >
-            Precision Cuts. <span className="text-gold-gradient">Premium Style.</span>
+            Premium Barbering in <span className="text-gold-gradient">Woodhouse, Leeds</span>
           </motion.h2>
 
           <motion.p
@@ -63,7 +63,7 @@ export const AboutSection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base sm:text-lg text-[#CFCFCF] font-light leading-relaxed"
           >
-            Precision Barbers is one of Harehills' trusted barbershops, known for delivering high-quality haircuts, sharp skin fades and professional beard grooming in a welcoming atmosphere.
+            HYDE PARK BARBERS is one of the highest-rated barbershops in Woodhouse, Leeds, proudly holding a 4.9-star rating from 113 satisfied customers.
           </motion.p>
         </div>
 
@@ -83,17 +83,17 @@ export const AboutSection: React.FC = () => {
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
-                    alt="Precision Barbers Shop Interior"
+                    alt="HYDE PARK BARBERS Shop Interior"
                     className="w-full h-64 sm:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Harehills, Leeds</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Woodhouse, Leeds</span>
                 </div>
 
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=80"
-                    alt="Friendly Team at Precision Barbers"
+                    alt="Friendly Barbers at HYDE PARK BARBERS"
                     className="w-full h-44 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
@@ -115,19 +115,19 @@ export const AboutSection: React.FC = () => {
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
-                    alt="107 Roundhay Rd Location"
+                    alt="11 Hyde Park Corner Location"
                     className="w-full h-64 sm:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">LS8 5AJ</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">LS6 1AF</span>
                 </div>
               </div>
             </div>
 
             {/* Floating Gold Emblem Badge */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 p-5 rounded-2xl glass-card-gold gold-border-glow text-center shadow-2xl">
-              <span className="block font-cinzel text-3xl font-black text-gold-gradient">4.6★</span>
-              <span className="block text-[10px] uppercase tracking-[0.2em] text-[#FAFAFA] font-bold mt-1">127 Reviews</span>
+              <span className="block font-cinzel text-3xl font-black text-gold-gradient">4.9★</span>
+              <span className="block text-[10px] uppercase tracking-[0.2em] text-[#FAFAFA] font-bold mt-1">113 Reviews</span>
             </div>
           </motion.div>
 
@@ -141,13 +141,13 @@ export const AboutSection: React.FC = () => {
           >
             <div className="space-y-4">
               <h3 className="font-cinzel text-2xl sm:text-3xl font-bold text-white">
-                Trusted Barbershop in Harehills, Leeds
+                Top Rated Barbershop in Woodhouse, Leeds
               </h3>
               <p className="text-[#CFCFCF] text-sm sm:text-base leading-relaxed font-light">
-                Precision Barbers is one of Harehills' trusted barbershops, known for delivering high-quality haircuts, sharp skin fades and professional beard grooming in a welcoming atmosphere.
+                HYDE PARK BARBERS is one of the highest-rated barbershops in Woodhouse, Leeds, proudly holding a 4.9-star rating from 113 satisfied customers.
               </p>
               <p className="text-[#CFCFCF] text-sm sm:text-base leading-relaxed font-light">
-                With a 4.6-star Google rating from 127 satisfied customers, our experienced barbers are committed to helping every client look and feel their best.
+                Known for outstanding customer service, attention to detail and a welcoming atmosphere, our skilled team delivers premium haircuts for clients of all ages.
               </p>
             </div>
 
@@ -157,8 +157,8 @@ export const AboutSection: React.FC = () => {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm text-white uppercase tracking-wider">107 Roundhay Rd, Harehills, Leeds LS8 5AJ</h4>
-                  <p className="text-xs text-[#CFCFCF]">Conveniently located in Harehills, Leeds</p>
+                  <h4 className="font-bold text-sm text-white uppercase tracking-wider">11 Hyde Park Corner, 11 Woodhouse Ln, Woodhouse, Leeds LS6 1AF</h4>
+                  <p className="text-xs text-[#CFCFCF]">Conveniently located in Woodhouse, Leeds</p>
                 </div>
               </div>
             </div>

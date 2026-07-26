@@ -31,10 +31,10 @@ export const ContactSection: React.FC = () => {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#171717] border border-[#C9A227]/30 text-xs text-[#C9A227] font-semibold tracking-[0.2em] uppercase"
+            className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#171717] border border-[#C9A227]/30 text-xs text-[#C9A227] font-semibold tracking-[0.2em] uppercase"
           >
             <MapPin className="w-3.5 h-3.5" />
-            <span>Visit Us in Leeds</span>
+            <span>Visit Us in Woodhouse, Leeds</span>
           </motion.div>
 
           <motion.h2
@@ -54,7 +54,7 @@ export const ContactSection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base text-[#CFCFCF] font-light max-w-xl mx-auto"
           >
-            Located at 107 Roundhay Rd, Harehills, Leeds LS8 5AJ. Walk-ins subject to availability; appointments recommended.
+            Located at 11 Hyde Park Corner, 11 Woodhouse Ln, Woodhouse, Leeds LS6 1AF. Walk-ins subject to availability; appointments recommended.
           </motion.p>
         </div>
 
@@ -97,21 +97,13 @@ export const ContactSection: React.FC = () => {
                 </a>
 
                 <a
-                  href={`mailto:${BUSINESS_INFO.email}`}
-                  className="flex items-center space-x-3 text-[#CFCFCF] hover:text-[#C9A227] transition-colors"
-                >
-                  <Mail className="w-4 h-4 text-[#C9A227]" />
-                  <span>{BUSINESS_INFO.email}</span>
-                </a>
-
-                <a
                   href={BUSINESS_INFO.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 text-[#CFCFCF] hover:text-[#C9A227] transition-colors"
                 >
                   <Instagram className="w-4 h-4 text-[#C9A227]" />
-                  <span>@precision_barber1</span>
+                  <span>@hydeparkbarbers</span>
                 </a>
               </div>
             </div>
@@ -146,8 +138,8 @@ export const ContactSection: React.FC = () => {
             {/* Interactive Map Embed */}
             <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl h-80 relative bg-[#171717]">
               <iframe
-                title="Precision Barbers Location Map"
-                src="https://maps.google.com/maps?q=107+Roundhay+Rd,+Harehills,+Leeds+LS8+5AJ&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                title="HYDE PARK BARBERS Location Map"
+                src="https://maps.google.com/maps?q=11+Hyde+Park+Corner,+11+Woodhouse+Ln,+Woodhouse,+Leeds+LS6+1AF&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(0.9) invert(0.9) contrast(1.2)' }}
@@ -155,22 +147,22 @@ export const ContactSection: React.FC = () => {
                 loading="lazy"
               />
               <div className="absolute top-4 left-4 p-3 rounded-xl bg-[#090909]/90 backdrop-blur-md border border-[#C9A227]/40 text-xs">
-                <p className="font-bold text-white">Precision Barbers</p>
-                <p className="text-[10px] text-[#C9A227]">107 Roundhay Rd, Harehills, Leeds LS8 5AJ</p>
+                <p className="font-bold text-white">HYDE PARK BARBERS</p>
+                <p className="text-[10px] text-[#C9A227]">11 Hyde Park Corner, Woodhouse, Leeds LS6 1AF</p>
               </div>
             </div>
 
-            {/* Quick Inquiry / Wedding Party Form */}
+            {/* Quick Inquiry Form */}
             <div className="p-8 rounded-2xl bg-[#171717]/80 border border-white/10 space-y-6 shadow-xl">
               <h3 className="font-cinzel text-xl font-bold text-white">
-                Send An Inquiry / Wedding Request
+                Send An Inquiry / Request
               </h3>
 
               {formSubmitted ? (
                 <div className="p-6 rounded-xl bg-[#C9A227]/20 border border-[#C9A227] text-center space-y-2">
                   <CheckCircle2 className="w-8 h-8 text-[#C9A227] mx-auto" />
                   <p className="font-bold text-white text-sm">Message Sent Successfully</p>
-                  <p className="text-xs text-[#CFCFCF]">Thank you! We will get back to you within 24 hours.</p>
+                  <p className="text-xs text-[#CFCFCF]">Thank you! We will get back to you shortly.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -207,7 +199,7 @@ export const ContactSection: React.FC = () => {
                       required
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                      placeholder="e.g. Wedding Party Grooming Request"
+                      placeholder="e.g. Booking inquiry or group haircut request"
                       className="w-full px-4 py-3 rounded-xl bg-[#090909] border border-white/10 text-white text-sm focus:border-[#C9A227] focus:outline-none"
                     />
                   </div>

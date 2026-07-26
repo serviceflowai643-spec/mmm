@@ -56,6 +56,16 @@ export interface BookingFormState {
   notes: string;
 }
 
+export interface InstagramPost {
+  id: string;
+  image: string;
+  caption: string;
+  likes: number;
+  comments: number;
+  date: string;
+  url: string;
+}
+
 export interface BusinessInfo {
   name: string;
   tagline: string;

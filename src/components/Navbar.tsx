@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Scissors, Phone, MapPin, Menu, X, Calendar } from 'lucide-react';
+import { Scissors, Phone, MapPin, Menu, X, Calendar, Instagram } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/shopData';
 
 interface NavbarProps {
@@ -28,6 +28,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
     { name: 'Services', href: '#services' },
     { name: 'Barbers', href: '#team' },
     { name: 'Gallery', href: '#gallery' },
+    { name: 'Instagram', href: '#instagram' },
     { name: 'Reviews', href: '#reviews' },
     { name: 'Location', href: '#contact' },
   ];
@@ -55,7 +56,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             </div>
             <div>
               <span className="block font-cinzel text-lg sm:text-xl font-bold tracking-[0.15em] uppercase text-white group-hover:text-gold-gradient transition-colors">
-                PRECISION
+                HYDE PARK
               </span>
               <span className="block text-[9px] uppercase tracking-[0.3em] text-[#C9A227] font-semibold -mt-1">
                 BARBERS • LEEDS
@@ -64,7 +65,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center space-x-8" id="desktop-nav">
+          <nav className="hidden md:flex items-center space-x-7" id="desktop-nav">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -77,7 +78,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           </nav>
 
           {/* Action CTAs */}
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-3">
+            <a
+              href={BUSINESS_INFO.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2.5 rounded-full border border-white/10 hover:border-[#C9A227] text-[#C9A227] hover:bg-[#C9A227] hover:text-[#090909] transition-all"
+              aria-label="Instagram Page"
+            >
+              <Instagram className="w-4 h-4" />
+            </a>
+
             <a
               href={`tel:${BUSINESS_INFO.phone}`}
               className="flex items-center space-x-2 text-xs text-[#CFCFCF] hover:text-white px-3 py-2 rounded-full border border-white/10 hover:border-white/30 transition-all bg-[#171717]/40 backdrop-blur-md"
@@ -134,7 +145,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             <div className="px-6 pt-4 pb-8 space-y-4">
               <div className="flex items-center space-x-2 text-xs text-[#C9A227] pb-3 border-b border-white/10">
                 <MapPin className="w-4 h-4" />
-                <span>{BUSINESS_INFO.address}, {BUSINESS_INFO.city} {BUSINESS_INFO.postcode}</span>
+                <span>11 Hyde Park Corner, Woodhouse, LS6 1AF</span>
               </div>
 
               {navLinks.map((link) => (
@@ -160,6 +171,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
                   <Calendar className="w-4 h-4" />
                   <span>Book Appointment Online</span>
                 </button>
+
+                <a
+                  href={BUSINESS_INFO.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-3 rounded-full text-xs font-bold uppercase tracking-[0.15em] bg-gradient-to-r from-[#E1306C] via-[#FD1D1D] to-[#F56040] text-white flex items-center justify-center space-x-2 shadow-md"
+                >
+                  <Instagram className="w-4 h-4" />
+                  <span>Follow @hydeparkbarbers</span>
+                </a>
 
                 <a
                   href={`tel:${BUSINESS_INFO.phone}`}

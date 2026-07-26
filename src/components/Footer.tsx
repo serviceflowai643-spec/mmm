@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scissors, ArrowUp, Instagram, MapPin, Phone, Mail } from 'lucide-react';
+import { Scissors, ArrowUp, Instagram, MapPin, Phone, Mail, ExternalLink } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/shopData';
 
 export const Footer: React.FC = () => {
@@ -21,27 +21,31 @@ export const Footer: React.FC = () => {
               </div>
               <div>
                 <span className="block font-cinzel text-lg font-bold uppercase tracking-wider text-white">
-                  Precision Barbers
+                  HYDE PARK BARBERS
                 </span>
                 <span className="block text-[9px] uppercase tracking-[0.25em] text-[#C9A227]">
-                  LEEDS • LS8 5AJ
+                  WOODHOUSE • LS6 1AF
                 </span>
               </div>
             </div>
 
             <p className="text-xs text-[#CFCFCF] font-light leading-relaxed">
-              Precision Cuts. Premium Style. Trusted Barbers in Leeds. High-quality haircuts, sharp skin fades, and expert beard grooming at 107 Roundhay Rd, Harehills.
+              Premium Barbering Experience in Woodhouse, Leeds. Expert haircuts, precision skin fades, and professional beard grooming at 11 Hyde Park Corner.
             </p>
 
-            <a
-              href={BUSINESS_INFO.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 text-xs text-[#C9A227] hover:underline"
-            >
-              <Instagram className="w-4 h-4" />
-              <span>@precision_barber1</span>
-            </a>
+            <div>
+              <a
+                href={BUSINESS_INFO.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-[#E1306C] via-[#FD1D1D] to-[#F56040] text-white shadow-md hover:brightness-110 transition-all duration-300"
+                id="footer-instagram-btn"
+              >
+                <Instagram className="w-4 h-4" />
+                <span>Follow Us on Instagram</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -54,6 +58,7 @@ export const Footer: React.FC = () => {
               <li><a href="#services" className="hover:text-white transition-colors">Services & Pricing</a></li>
               <li><a href="#team" className="hover:text-white transition-colors">Master Barbers</a></li>
               <li><a href="#gallery" className="hover:text-white transition-colors">Visual Gallery</a></li>
+              <li><a href="#instagram" className="hover:text-white transition-colors">Instagram Feed</a></li>
               <li><a href="#reviews" className="hover:text-white transition-colors">Client Reviews</a></li>
               <li><a href="#booking" className="hover:text-white transition-colors">Book Online</a></li>
             </ul>
@@ -97,7 +102,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#CFCFCF]/60 space-y-4 sm:space-y-0">
-          <p>© {new Date().getFullYear()} Precision Barbers Leeds. All rights reserved. 107 Roundhay Rd, Harehills, LS8 5AJ.</p>
+          <p>© {new Date().getFullYear()} HYDE PARK BARBERS Leeds. All rights reserved. 11 Hyde Park Corner, Woodhouse, LS6 1AF.</p>
 
           <button
             onClick={scrollToTop}

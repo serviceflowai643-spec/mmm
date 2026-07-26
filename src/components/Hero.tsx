@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Calendar, Users, Star, MapPin, ChevronDown, Award, Coffee } from 'lucide-react';
+import { Calendar, Users, Star, MapPin, ChevronDown, Award, Coffee, Instagram, ExternalLink } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/shopData';
 
 interface HeroProps {
@@ -15,7 +15,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=2000&q=85"
-          alt="Lords' Barbering Shop Interior at 7 Grand Arcade Leeds"
+          alt="HYDE PARK BARBERS Shop Interior in Woodhouse Leeds"
           className="w-full h-full object-cover object-center scale-105 opacity-30 filter brightness-90 contrast-110"
         />
         {/* Layered Luxury Gradients */}
@@ -40,14 +40,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             <Star className="w-4 h-4 fill-[#C9A227]" />
             <Star className="w-4 h-4 fill-[#C9A227]" />
             <Star className="w-4 h-4 fill-[#C9A227]" />
-            <span className="font-bold text-xs text-white ml-1">4.6</span>
+            <span className="font-bold text-xs text-white ml-1">4.9</span>
           </div>
           <span className="text-white/30 text-xs">•</span>
-          <span className="text-xs uppercase tracking-wider text-[#CFCFCF] font-medium">127+ Google Reviews</span>
+          <span className="text-xs uppercase tracking-wider text-[#CFCFCF] font-medium">113+ Google Reviews</span>
           <span className="text-white/30 text-xs">•</span>
           <span className="flex items-center space-x-1 text-xs text-[#C9A227] font-semibold">
             <MapPin className="w-3.5 h-3.5" />
-            <span>107 Roundhay Rd, Harehills, Leeds</span>
+            <span>11 Hyde Park Corner, Woodhouse, Leeds</span>
           </span>
         </motion.div>
 
@@ -59,15 +59,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           className="space-y-4"
         >
           <h1 className="font-cinzel text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase tracking-[0.08em] leading-[1.05] text-white">
-            Precision Barbers
+            HYDE PARK BARBERS
           </h1>
           
           <p className="font-syne text-lg sm:text-2xl text-[#C9A227] font-bold uppercase tracking-wider">
-            Professional Haircuts & Skin Fades in Harehills, Leeds
+            Premium Haircuts & Skin Fades in Woodhouse, Leeds
           </p>
 
           <p className="max-w-2xl mx-auto text-base sm:text-lg text-[#CFCFCF] font-light leading-relaxed">
-            Experience premium barbering at Precision Barbers, where expert craftsmanship meets outstanding customer service. From sharp skin fades and beard grooming to classic cuts and modern styling, our skilled team delivers precision with every appointment.
+            Experience expert barbering at HYDE PARK BARBERS. From precision skin fades and classic haircuts to beard grooming and modern styling, our experienced barbers provide exceptional service in a friendly and relaxed atmosphere.
           </p>
         </motion.div>
 
@@ -76,7 +76,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 pt-4"
+          className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-5 pt-4"
         >
           <button
             onClick={onOpenBooking}
@@ -88,8 +88,20 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           </button>
 
           <a
+            href={BUSINESS_INFO.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto px-7 py-4 rounded-full text-sm font-bold uppercase tracking-[0.15em] bg-gradient-to-r from-[#E1306C] via-[#FD1D1D] to-[#F56040] text-white shadow-lg hover:brightness-110 hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2.5 group"
+            id="hero-instagram-cta"
+          >
+            <Instagram className="w-5 h-5" />
+            <span>Follow Us on Instagram</span>
+            <ExternalLink className="w-4 h-4 ml-0.5" />
+          </a>
+
+          <a
             href="#team"
-            className="w-full sm:w-auto px-8 py-4 rounded-full text-sm font-semibold uppercase tracking-[0.2em] border border-white/20 text-[#FAFAFA] hover:border-[#C9A227] hover:text-[#C9A227] bg-[#171717]/60 backdrop-blur-md transition-all duration-300 flex items-center justify-center space-x-3 group"
+            className="w-full sm:w-auto px-7 py-4 rounded-full text-sm font-semibold uppercase tracking-[0.15em] border border-white/20 text-[#FAFAFA] hover:border-[#C9A227] hover:text-[#C9A227] bg-[#171717]/60 backdrop-blur-md transition-all duration-300 flex items-center justify-center space-x-2.5 group"
             id="hero-team-link"
           >
             <Users className="w-5 h-5 transition-transform group-hover:scale-110" />
@@ -107,33 +119,33 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           <div className="p-4 rounded-xl bg-[#171717]/40 border border-white/5 backdrop-blur-sm">
             <div className="flex items-center space-x-2 text-[#C9A227] mb-1">
               <Award className="w-4 h-4" />
-              <span className="text-xs uppercase font-bold tracking-wider">Expert Barbers</span>
+              <span className="text-xs uppercase font-bold tracking-wider">Expert Team</span>
             </div>
-            <p className="text-xs text-[#CFCFCF]">Heady, Sam & Marco</p>
+            <p className="text-xs text-[#CFCFCF]">Skilled & Friendly Barbers</p>
           </div>
 
           <div className="p-4 rounded-xl bg-[#171717]/40 border border-white/5 backdrop-blur-sm">
             <div className="flex items-center space-x-2 text-[#C9A227] mb-1">
               <Coffee className="w-4 h-4" />
-              <span className="text-xs uppercase font-bold tracking-wider">High Quality</span>
+              <span className="text-xs uppercase font-bold tracking-wider">Atmosphere</span>
             </div>
-            <p className="text-xs text-[#CFCFCF]">Craftsmanship & Service</p>
+            <p className="text-xs text-[#CFCFCF]">Relaxed & Welcoming</p>
           </div>
 
           <div className="p-4 rounded-xl bg-[#171717]/40 border border-white/5 backdrop-blur-sm">
             <div className="flex items-center space-x-2 text-[#C9A227] mb-1">
               <MapPin className="w-4 h-4" />
-              <span className="text-xs uppercase font-bold tracking-wider">Harehills</span>
+              <span className="text-xs uppercase font-bold tracking-wider">Woodhouse</span>
             </div>
-            <p className="text-xs text-[#CFCFCF]">107 Roundhay Rd, Leeds</p>
+            <p className="text-xs text-[#CFCFCF]">11 Hyde Park Corner</p>
           </div>
 
           <div className="p-4 rounded-xl bg-[#171717]/40 border border-white/5 backdrop-blur-sm">
             <div className="flex items-center space-x-2 text-[#C9A227] mb-1">
               <Star className="w-4 h-4 fill-[#C9A227]" />
-              <span className="text-xs uppercase font-bold tracking-wider">4.6★ Rated</span>
+              <span className="text-xs uppercase font-bold tracking-wider">4.9★ Rated</span>
             </div>
-            <p className="text-xs text-[#CFCFCF]">127+ Google Reviews</p>
+            <p className="text-xs text-[#CFCFCF]">113+ Google Reviews</p>
           </div>
         </motion.div>
 

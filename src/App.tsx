@@ -7,6 +7,7 @@ import { AboutSection } from './components/AboutSection';
 import { ServicesSection } from './components/ServicesSection';
 import { TeamSection } from './components/TeamSection';
 import { GallerySection } from './components/GallerySection';
+import { InstagramSection } from './components/InstagramSection';
 import { ReviewsSection } from './components/ReviewsSection';
 import { BookingSection } from './components/BookingSection';
 import { ContactSection } from './components/ContactSection';
@@ -44,6 +45,7 @@ export default function App() {
             <ServicesSection onSelectService={(serviceId) => scrollToBooking(serviceId, undefined)} />
             <TeamSection onSelectBarber={(barberId) => scrollToBooking(undefined, barberId)} />
             <GallerySection />
+            <InstagramSection />
             <ReviewsSection />
             <BookingSection initialServiceId={preselectedService} initialBarberId={preselectedBarber} />
             <ContactSection />
