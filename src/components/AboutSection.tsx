@@ -43,7 +43,7 @@ export const AboutSection: React.FC = () => {
             className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#171717] border border-[#C9A227]/30 text-xs text-[#C9A227] font-semibold tracking-[0.2em] uppercase"
           >
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Our Heritage & Philosophy</span>
+            <span>About MASTER BARBER</span>
           </motion.div>
 
           <motion.h2
@@ -53,7 +53,7 @@ export const AboutSection: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="font-cinzel text-3xl sm:text-5xl font-bold uppercase tracking-[0.05em] text-white"
           >
-            Crafted. <span className="text-gold-gradient">Not Rushed.</span>
+            Quality. Consistency. <span className="text-gold-gradient">Friendly Service.</span>
           </motion.h2>
 
           <motion.p
@@ -63,7 +63,7 @@ export const AboutSection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base sm:text-lg text-[#CFCFCF] font-light leading-relaxed"
           >
-            Nestled inside Leeds' iconic Victorian Grand Arcade, Lords' Barbering was founded on a simple principle: to bring back the golden standard of barbering where quality, conversation, and precision matter above all.
+            MASTER BARBER is a highly rated barbershop in Headingley, Leeds, known for precision haircuts, modern skin fades, beard grooming, affordable prices and exceptional customer service.
           </motion.p>
         </div>
 
@@ -83,21 +83,21 @@ export const AboutSection: React.FC = () => {
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
-                    alt="Lords Barbering Shop Interior"
+                    alt="MASTER BARBER Shop Interior"
                     className="w-full h-64 sm:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">7 Grand Arcade</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Headingley, Leeds</span>
                 </div>
 
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
-                    src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
-                    alt="Artisan Espresso Service"
+                    src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=80"
+                    alt="Friendly Atmosphere at MASTER BARBER"
                     className="w-full h-44 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Fresh Espresso</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Friendly Atmosphere</span>
                 </div>
               </div>
 
@@ -105,29 +105,29 @@ export const AboutSection: React.FC = () => {
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80"
-                    alt="Master Barber Crafting Skin Fade"
+                    alt="Precision Haircut & Skin Fade"
                     className="w-full h-44 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Skin Fade Precision</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Precision Skin Fades</span>
                 </div>
 
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
-                    alt="Grand Arcade Leeds Location"
+                    alt="109 Otley Rd Location"
                     className="w-full h-64 sm:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Leeds LS1 6PG</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">LS6 3PX</span>
                 </div>
               </div>
             </div>
 
             {/* Floating Gold Emblem Badge */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 p-5 rounded-2xl glass-card-gold gold-border-glow text-center shadow-2xl">
-              <span className="block font-cinzel text-3xl font-black text-gold-gradient">12+</span>
-              <span className="block text-[10px] uppercase tracking-[0.2em] text-[#FAFAFA] font-bold mt-1">Years in Leeds</span>
+              <span className="block font-cinzel text-3xl font-black text-gold-gradient">4.9★</span>
+              <span className="block text-[10px] uppercase tracking-[0.2em] text-[#FAFAFA] font-bold mt-1">186 Reviews</span>
             </div>
           </motion.div>
 
@@ -141,13 +141,13 @@ export const AboutSection: React.FC = () => {
           >
             <div className="space-y-4">
               <h3 className="font-cinzel text-2xl sm:text-3xl font-bold text-white">
-                More Than A Barber Shop. A Sanctuary of Craft.
+                Headingley's Premier Barbershop
               </h3>
               <p className="text-[#CFCFCF] text-sm sm:text-base leading-relaxed font-light">
-                Stepping through the doors of 7 Grand Arcade into Lords' Barbering feels like entering an exclusive sanctuary. From the aroma of freshly ground artisan coffee to the gentle hum of vintage Belmont chairs and soft acoustic jazz, every single element has been curated for your relaxation.
+                MASTER BARBER is a highly rated barbershop in Headingley, Leeds, known for precision haircuts, modern skin fades, beard grooming, affordable prices and exceptional customer service.
               </p>
               <p className="text-[#CFCFCF] text-sm sm:text-base leading-relaxed font-light">
-                Whether you're visiting for a sharp zero skin fade before an important meeting, a relaxing dual hot towel beard sculpt on the weekend, or complete wedding grooming, Anthony, Kyle and Byron deliver consistent excellence without compromise.
+                With a 4.9-star rating from 186 satisfied customers, the shop has built a reputation for quality, consistency and a friendly atmosphere where every client feels welcomed and leaves looking their best.
               </p>
             </div>
 
@@ -157,8 +157,8 @@ export const AboutSection: React.FC = () => {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm text-white uppercase tracking-wider">7 Grand Arcade, Leeds LS1 6PG</h4>
-                  <p className="text-xs text-[#CFCFCF]">Conveniently located in Leeds City Centre Arcade</p>
+                  <h4 className="font-bold text-sm text-white uppercase tracking-wider">109 Otley Rd, Headingley, Leeds LS6 3PX</h4>
+                  <p className="text-xs text-[#CFCFCF]">Conveniently located in the heart of Headingley</p>
                 </div>
               </div>
             </div>

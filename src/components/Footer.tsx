@@ -21,16 +21,16 @@ export const Footer: React.FC = () => {
               </div>
               <div>
                 <span className="block font-cinzel text-lg font-bold uppercase tracking-wider text-white">
-                  LORDS' BARBERING
+                  MASTER BARBER
                 </span>
                 <span className="block text-[9px] uppercase tracking-[0.25em] text-[#C9A227]">
-                  LEEDS • EST. 2014
+                  HEADINGLEY • LEEDS
                 </span>
               </div>
             </div>
 
             <p className="text-xs text-[#CFCFCF] font-light leading-relaxed">
-              Crafted. Not Rushed. Leeds' premier luxury barber shop inside 7 Grand Arcade. Exceptional craftsmanship, sharp skin fades, hot towel beard sculpts & artisan espresso.
+              Premium Barbering Experience in Headingley, Leeds. Precision haircuts, modern skin fades, and expert beard grooming at 109 Otley Rd.
             </p>
 
             <a
@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
               className="inline-flex items-center space-x-2 text-xs text-[#C9A227] hover:underline"
             >
               <Instagram className="w-4 h-4" />
-              <span>@lordsbarbering</span>
+              <span>@masterbarberleeds</span>
             </a>
           </div>
 
@@ -97,7 +97,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#CFCFCF]/60 space-y-4 sm:space-y-0">
-          <p>© {new Date().getFullYear()} Lords' Barbering Leeds. All rights reserved. 7 Grand Arcade, LS1 6PG.</p>
+          <p>© {new Date().getFullYear()} MASTER BARBER Headingley, Leeds. All rights reserved. 109 Otley Rd, LS6 3PX.</p>
 
           <button
             onClick={scrollToTop}

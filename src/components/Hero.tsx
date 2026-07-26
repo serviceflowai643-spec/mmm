@@ -40,14 +40,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             <Star className="w-4 h-4 fill-[#C9A227]" />
             <Star className="w-4 h-4 fill-[#C9A227]" />
             <Star className="w-4 h-4 fill-[#C9A227]" />
-            <span className="font-bold text-xs text-white ml-1">4.8</span>
+            <span className="font-bold text-xs text-white ml-1">4.9</span>
           </div>
           <span className="text-white/30 text-xs">•</span>
-          <span className="text-xs uppercase tracking-wider text-[#CFCFCF] font-medium">164+ Google Reviews</span>
+          <span className="text-xs uppercase tracking-wider text-[#CFCFCF] font-medium">186+ Google Reviews</span>
           <span className="text-white/30 text-xs">•</span>
           <span className="flex items-center space-x-1 text-xs text-[#C9A227] font-semibold">
             <MapPin className="w-3.5 h-3.5" />
-            <span>7 Grand Arcade, Leeds</span>
+            <span>109 Otley Rd, Headingley, Leeds</span>
           </span>
         </motion.div>
 
@@ -59,12 +59,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           className="space-y-4"
         >
           <h1 className="font-cinzel text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase tracking-[0.08em] leading-[1.05] text-white">
-            Traditional Craft.
-            <span className="block text-gold-gradient mt-1">Modern Precision.</span>
+            MASTER BARBER
           </h1>
+          
+          <p className="font-syne text-lg sm:text-2xl text-[#C9A227] font-bold uppercase tracking-wider">
+            Premium Barbering Experience in Headingley, Leeds
+          </p>
 
-          <p className="max-w-2xl mx-auto text-base sm:text-xl text-[#CFCFCF] font-light leading-relaxed">
-            Luxury barbering in the heart of Leeds, combining exceptional craftsmanship with a welcoming atmosphere.
+          <p className="max-w-2xl mx-auto text-base sm:text-lg text-[#CFCFCF] font-light leading-relaxed">
+            Experience precision haircuts, modern skin fades, classic barbering and expert beard grooming delivered by experienced professionals in a welcoming atmosphere.
           </p>
         </motion.div>
 
@@ -120,17 +123,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           <div className="p-4 rounded-xl bg-[#171717]/40 border border-white/5 backdrop-blur-sm">
             <div className="flex items-center space-x-2 text-[#C9A227] mb-1">
               <MapPin className="w-4 h-4" />
-              <span className="text-xs uppercase font-bold tracking-wider">Grand Arcade</span>
+              <span className="text-xs uppercase font-bold tracking-wider">Headingley</span>
             </div>
-            <p className="text-xs text-[#CFCFCF]">Historic Victorian setting</p>
+            <p className="text-xs text-[#CFCFCF]">109 Otley Rd, Leeds</p>
           </div>
 
           <div className="p-4 rounded-xl bg-[#171717]/40 border border-white/5 backdrop-blur-sm">
             <div className="flex items-center space-x-2 text-[#C9A227] mb-1">
               <Star className="w-4 h-4 fill-[#C9A227]" />
-              <span className="text-xs uppercase font-bold tracking-wider">100% Unhurried</span>
+              <span className="text-xs uppercase font-bold tracking-wider">4.9★ Rated</span>
             </div>
-            <p className="text-xs text-[#CFCFCF]">Crafted. Not rushed.</p>
+            <p className="text-xs text-[#CFCFCF]">186+ Google Reviews</p>
           </div>
         </motion.div>
 

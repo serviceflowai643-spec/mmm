@@ -54,7 +54,7 @@ export const ContactSection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base text-[#CFCFCF] font-light max-w-xl mx-auto"
           >
-            Located inside the historic Grand Arcade in Leeds City Centre. Walk-ins subject to availability; appointments recommended.
+            Located at 109 Otley Rd in Headingley, Leeds. Walk-ins subject to availability; appointments recommended.
           </motion.p>
         </div>
 
@@ -122,7 +122,7 @@ export const ContactSection: React.FC = () => {
                   className="flex items-center space-x-3 text-[#CFCFCF] hover:text-[#C9A227] transition-colors"
                 >
                   <Instagram className="w-4 h-4 text-[#C9A227]" />
-                  <span>@lordsbarbering</span>
+                  <span>@masterbarberleeds</span>
                 </a>
               </div>
             </div>
@@ -157,8 +157,8 @@ export const ContactSection: React.FC = () => {
             {/* Interactive Map Embed */}
             <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl h-80 relative bg-[#171717]">
               <iframe
-                title="Lords' Barbering Location Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2356.123456789!2d-1.5401!3d53.7997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c3f123456789%3A0x123456789abcdef!2s7+Grand+Arcade%2C+Leeds+LS1+6PG!5e0!3m2!1sen!2suk!4v1600000000000!5m2!1sen!2suk"
+                title="MASTER BARBER Location Map"
+                src="https://maps.google.com/maps?q=109+Otley+Rd,+Headingley,+Leeds+LS6+3PX&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(0.9) invert(0.9) contrast(1.2)' }}
@@ -166,8 +166,8 @@ export const ContactSection: React.FC = () => {
                 loading="lazy"
               />
               <div className="absolute top-4 left-4 p-3 rounded-xl bg-[#090909]/90 backdrop-blur-md border border-[#C9A227]/40 text-xs">
-                <p className="font-bold text-white">Lords' Barbering</p>
-                <p className="text-[10px] text-[#C9A227]">7 Grand Arcade, Leeds</p>
+                <p className="font-bold text-white">MASTER BARBER</p>
+                <p className="text-[10px] text-[#C9A227]">109 Otley Rd, Headingley, Leeds</p>
               </div>
             </div>
 
