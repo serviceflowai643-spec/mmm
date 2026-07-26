@@ -1,6 +1,6 @@
 {
-  "name": "MASTER BARBER",
-  "description": "Premium Barbering Experience in Headingley, Leeds",
+  "name": "Scissorhands Barber",
+  "description": "Professional Barbering in the Heart of Leeds",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

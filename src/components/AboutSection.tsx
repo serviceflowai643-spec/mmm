@@ -43,7 +43,7 @@ export const AboutSection: React.FC = () => {
             className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#171717] border border-[#C9A227]/30 text-xs text-[#C9A227] font-semibold tracking-[0.2em] uppercase"
           >
             <Sparkles className="w-3.5 h-3.5" />
-            <span>About MASTER BARBER</span>
+            <span>About Scissorhands Barber</span>
           </motion.div>
 
           <motion.h2
@@ -53,7 +53,7 @@ export const AboutSection: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="font-cinzel text-3xl sm:text-5xl font-bold uppercase tracking-[0.05em] text-white"
           >
-            Quality. Consistency. <span className="text-gold-gradient">Friendly Service.</span>
+            Professional Barbering. <span className="text-gold-gradient">Fast & Friendly Service.</span>
           </motion.h2>
 
           <motion.p
@@ -63,7 +63,7 @@ export const AboutSection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base sm:text-lg text-[#CFCFCF] font-light leading-relaxed"
           >
-            MASTER BARBER is a highly rated barbershop in Headingley, Leeds, known for precision haircuts, modern skin fades, beard grooming, affordable prices and exceptional customer service.
+            Scissorhands Barber is a highly rated barbershop in Leeds, trusted by students, professionals and local residents for delivering high-quality haircuts at affordable prices.
           </motion.p>
         </div>
 
@@ -83,21 +83,21 @@ export const AboutSection: React.FC = () => {
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
-                    alt="MASTER BARBER Shop Interior"
+                    alt="Scissorhands Barber Shop Interior"
                     className="w-full h-64 sm:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Headingley, Leeds</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Leeds City Centre</span>
                 </div>
 
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=80"
-                    alt="Friendly Atmosphere at MASTER BARBER"
+                    alt="Friendly Team at Scissorhands Barber"
                     className="w-full h-44 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Friendly Atmosphere</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Friendly Team</span>
                 </div>
               </div>
 
@@ -115,19 +115,19 @@ export const AboutSection: React.FC = () => {
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
-                    alt="109 Otley Rd Location"
+                    alt="31a Great George St Location"
                     className="w-full h-64 sm:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">LS6 3PX</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">LS1 3BB</span>
                 </div>
               </div>
             </div>
 
             {/* Floating Gold Emblem Badge */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 p-5 rounded-2xl glass-card-gold gold-border-glow text-center shadow-2xl">
-              <span className="block font-cinzel text-3xl font-black text-gold-gradient">4.9★</span>
-              <span className="block text-[10px] uppercase tracking-[0.2em] text-[#FAFAFA] font-bold mt-1">186 Reviews</span>
+              <span className="block font-cinzel text-3xl font-black text-gold-gradient">4.8★</span>
+              <span className="block text-[10px] uppercase tracking-[0.2em] text-[#FAFAFA] font-bold mt-1">272 Reviews</span>
             </div>
           </motion.div>
 
@@ -141,13 +141,13 @@ export const AboutSection: React.FC = () => {
           >
             <div className="space-y-4">
               <h3 className="font-cinzel text-2xl sm:text-3xl font-bold text-white">
-                Headingley's Premier Barbershop
+                Trusted Barbershop in Central Leeds
               </h3>
               <p className="text-[#CFCFCF] text-sm sm:text-base leading-relaxed font-light">
-                MASTER BARBER is a highly rated barbershop in Headingley, Leeds, known for precision haircuts, modern skin fades, beard grooming, affordable prices and exceptional customer service.
+                Scissorhands Barber is a highly rated barbershop in Leeds, trusted by students, professionals and local residents for delivering high-quality haircuts at affordable prices.
               </p>
               <p className="text-[#CFCFCF] text-sm sm:text-base leading-relaxed font-light">
-                With a 4.9-star rating from 186 satisfied customers, the shop has built a reputation for quality, consistency and a friendly atmosphere where every client feels welcomed and leaves looking their best.
+                Known for its friendly team, fast service and attention to detail, the shop has earned a 4.8-star rating from 272 satisfied customers.
               </p>
             </div>
 
@@ -157,8 +157,8 @@ export const AboutSection: React.FC = () => {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm text-white uppercase tracking-wider">109 Otley Rd, Headingley, Leeds LS6 3PX</h4>
-                  <p className="text-xs text-[#CFCFCF]">Conveniently located in the heart of Headingley</p>
+                  <h4 className="font-bold text-sm text-white uppercase tracking-wider">31a Great George St, Leeds LS1 3BB</h4>
+                  <p className="text-xs text-[#CFCFCF]">Conveniently located in the heart of Leeds</p>
                 </div>
               </div>
             </div>

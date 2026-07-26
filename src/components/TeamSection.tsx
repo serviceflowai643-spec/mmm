@@ -45,7 +45,7 @@ export const TeamSection: React.FC<TeamSectionProps> = ({ onSelectBarber }) => {
             transition={{ delay: 0.2 }}
             className="text-base text-[#CFCFCF] font-light max-w-2xl mx-auto"
           >
-            Our dedicated team brings decades of combined expertise, passion, and personal attention to every single cut in Headingley, Leeds.
+            Our dedicated team brings decades of combined expertise, passion, and personal attention to every single cut in Leeds.
           </motion.p>
         </div>
 

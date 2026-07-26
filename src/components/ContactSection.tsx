@@ -54,7 +54,7 @@ export const ContactSection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base text-[#CFCFCF] font-light max-w-xl mx-auto"
           >
-            Located at 109 Otley Rd in Headingley, Leeds. Walk-ins subject to availability; appointments recommended.
+            Located at 31a Great George St in Leeds LS1 3BB. Walk-ins subject to availability; appointments recommended.
           </motion.p>
         </div>
 
@@ -122,7 +122,7 @@ export const ContactSection: React.FC = () => {
                   className="flex items-center space-x-3 text-[#CFCFCF] hover:text-[#C9A227] transition-colors"
                 >
                   <Instagram className="w-4 h-4 text-[#C9A227]" />
-                  <span>@masterbarberleeds</span>
+                  <span>@scissorhandsbarber</span>
                 </a>
               </div>
             </div>
@@ -157,8 +157,8 @@ export const ContactSection: React.FC = () => {
             {/* Interactive Map Embed */}
             <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl h-80 relative bg-[#171717]">
               <iframe
-                title="MASTER BARBER Location Map"
-                src="https://maps.google.com/maps?q=109+Otley+Rd,+Headingley,+Leeds+LS6+3PX&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                title="Scissorhands Barber Location Map"
+                src="https://maps.google.com/maps?q=31a+Great+George+St,+Leeds+LS1+3BB&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(0.9) invert(0.9) contrast(1.2)' }}
@@ -166,8 +166,8 @@ export const ContactSection: React.FC = () => {
                 loading="lazy"
               />
               <div className="absolute top-4 left-4 p-3 rounded-xl bg-[#090909]/90 backdrop-blur-md border border-[#C9A227]/40 text-xs">
-                <p className="font-bold text-white">MASTER BARBER</p>
-                <p className="text-[10px] text-[#C9A227]">109 Otley Rd, Headingley, Leeds</p>
+                <p className="font-bold text-white">Scissorhands Barber</p>
+                <p className="text-[10px] text-[#C9A227]">31a Great George St, Leeds LS1 3BB</p>
               </div>
             </div>
 

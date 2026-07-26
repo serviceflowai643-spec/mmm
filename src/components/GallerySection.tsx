@@ -8,7 +8,7 @@ export const GallerySection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('All');
   const [lightboxItem, setLightboxItem] = useState<GalleryItem | null>(null);
 
-  const tabs = ['All', 'Interior & Arcade', 'Skin Fades & Cuts', 'Beard Sculpting', 'Espresso & Culture'];
+  const tabs = ['All', 'Interior & Shop', 'Skin Fades & Cuts', 'Beard Grooming'];
 
   const filteredItems = activeTab === 'All'
     ? GALLERY
@@ -37,7 +37,7 @@ export const GallerySection: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="font-cinzel text-3xl sm:text-5xl font-bold uppercase tracking-[0.05em] text-white"
           >
-            The Lords' <span className="text-gold-gradient">Gallery</span>
+            Visual <span className="text-gold-gradient">Gallery</span>
           </motion.h2>
 
           <motion.p
@@ -47,7 +47,7 @@ export const GallerySection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base text-[#CFCFCF] font-light"
           >
-            A visual showcase of real craftsmanship, Victorian architecture, and everyday life at 7 Grand Arcade, Leeds.
+            A visual showcase of real craftsmanship, friendly atmosphere, and everyday life at 31a Great George St, Leeds.
           </motion.p>
         </div>
 

@@ -21,16 +21,16 @@ export const Footer: React.FC = () => {
               </div>
               <div>
                 <span className="block font-cinzel text-lg font-bold uppercase tracking-wider text-white">
-                  MASTER BARBER
+                  Scissorhands Barber
                 </span>
                 <span className="block text-[9px] uppercase tracking-[0.25em] text-[#C9A227]">
-                  HEADINGLEY • LEEDS
+                  LEEDS • LS1 3BB
                 </span>
               </div>
             </div>
 
             <p className="text-xs text-[#CFCFCF] font-light leading-relaxed">
-              Premium Barbering Experience in Headingley, Leeds. Precision haircuts, modern skin fades, and expert beard grooming at 109 Otley Rd.
+              Professional Barbering in the Heart of Leeds. Premium haircuts, modern skin fades, and expert beard grooming at 31a Great George St.
             </p>
 
             <a
@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
               className="inline-flex items-center space-x-2 text-xs text-[#C9A227] hover:underline"
             >
               <Instagram className="w-4 h-4" />
-              <span>@masterbarberleeds</span>
+              <span>@scissorhandsbarber</span>
             </a>
           </div>
 
@@ -97,7 +97,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#CFCFCF]/60 space-y-4 sm:space-y-0">
-          <p>© {new Date().getFullYear()} MASTER BARBER Headingley, Leeds. All rights reserved. 109 Otley Rd, LS6 3PX.</p>
+          <p>© {new Date().getFullYear()} Scissorhands Barber Leeds. All rights reserved. 31a Great George St, LS1 3BB.</p>
 
           <button
             onClick={scrollToTop}

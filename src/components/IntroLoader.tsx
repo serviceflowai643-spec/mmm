@@ -78,7 +78,7 @@ export const IntroLoader: React.FC<IntroLoaderProps> = ({ onComplete }) => {
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="font-cinzel text-3xl sm:text-5xl font-bold tracking-[0.2em] uppercase text-gold-gradient mb-3"
             >
-              MASTER BARBER
+              SCISSORHANDS BARBER
             </motion.h1>
           )}
         </AnimatePresence>
@@ -115,10 +115,10 @@ export const IntroLoader: React.FC<IntroLoaderProps> = ({ onComplete }) => {
               className="space-y-2 mt-2"
             >
               <p className="font-syne text-xs sm:text-sm uppercase tracking-[0.3em] text-[#CFCFCF] font-semibold">
-                PREMIUM BARBERING EXPERIENCE
+                PROFESSIONAL BARBERING IN LEEDS
               </p>
               <p className="text-[10px] sm:text-xs text-[#C9A227]/80 tracking-[0.2em] font-light">
-                109 OTLEY RD • HEADINGLEY, LEEDS LS6
+                31A GREAT GEORGE ST • LEEDS LS1 3BB
               </p>
             </motion.div>
           )}

@@ -28,7 +28,7 @@ export interface Barber {
 export interface GalleryItem {
   id: string;
   title: string;
-  category: 'Interior & Arcade' | 'Skin Fades & Cuts' | 'Beard Sculpting' | 'Espresso & Culture';
+  category: 'Interior & Arcade' | 'Skin Fades & Cuts' | 'Beard Sculpting' | 'Espresso & Culture' | 'Interior & Shop' | 'Beard Grooming';
   image: string;
   caption: string;
   location?: string;

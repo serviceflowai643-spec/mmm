@@ -40,14 +40,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             <Star className="w-4 h-4 fill-[#C9A227]" />
             <Star className="w-4 h-4 fill-[#C9A227]" />
             <Star className="w-4 h-4 fill-[#C9A227]" />
-            <span className="font-bold text-xs text-white ml-1">4.9</span>
+            <span className="font-bold text-xs text-white ml-1">4.8</span>
           </div>
           <span className="text-white/30 text-xs">•</span>
-          <span className="text-xs uppercase tracking-wider text-[#CFCFCF] font-medium">186+ Google Reviews</span>
+          <span className="text-xs uppercase tracking-wider text-[#CFCFCF] font-medium">272+ Google Reviews</span>
           <span className="text-white/30 text-xs">•</span>
           <span className="flex items-center space-x-1 text-xs text-[#C9A227] font-semibold">
             <MapPin className="w-3.5 h-3.5" />
-            <span>109 Otley Rd, Headingley, Leeds</span>
+            <span>31a Great George St, Leeds</span>
           </span>
         </motion.div>
 
@@ -59,15 +59,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           className="space-y-4"
         >
           <h1 className="font-cinzel text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase tracking-[0.08em] leading-[1.05] text-white">
-            MASTER BARBER
+            Scissorhands Barber
           </h1>
           
           <p className="font-syne text-lg sm:text-2xl text-[#C9A227] font-bold uppercase tracking-wider">
-            Premium Barbering Experience in Headingley, Leeds
+            Professional Barbering in the Heart of Leeds
           </p>
 
           <p className="max-w-2xl mx-auto text-base sm:text-lg text-[#CFCFCF] font-light leading-relaxed">
-            Experience precision haircuts, modern skin fades, classic barbering and expert beard grooming delivered by experienced professionals in a welcoming atmosphere.
+            Experience premium haircuts, modern skin fades, beard grooming and classic barbering from experienced professionals. At Scissorhands Barber, every haircut is delivered with precision, quality and exceptional customer service.
           </p>
         </motion.div>
 
@@ -107,33 +107,33 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           <div className="p-4 rounded-xl bg-[#171717]/40 border border-white/5 backdrop-blur-sm">
             <div className="flex items-center space-x-2 text-[#C9A227] mb-1">
               <Award className="w-4 h-4" />
-              <span className="text-xs uppercase font-bold tracking-wider">Master Barbers</span>
+              <span className="text-xs uppercase font-bold tracking-wider">Expert Team</span>
             </div>
-            <p className="text-xs text-[#CFCFCF]">Anthony, Kyle & Byron</p>
+            <p className="text-xs text-[#CFCFCF]">Alex, Sam & Marco</p>
           </div>
 
           <div className="p-4 rounded-xl bg-[#171717]/40 border border-white/5 backdrop-blur-sm">
             <div className="flex items-center space-x-2 text-[#C9A227] mb-1">
               <Coffee className="w-4 h-4" />
-              <span className="text-xs uppercase font-bold tracking-wider">Espresso Bar</span>
+              <span className="text-xs uppercase font-bold tracking-wider">Fast Service</span>
             </div>
-            <p className="text-xs text-[#CFCFCF]">Complimentary roast</p>
+            <p className="text-xs text-[#CFCFCF]">Attention to detail</p>
           </div>
 
           <div className="p-4 rounded-xl bg-[#171717]/40 border border-white/5 backdrop-blur-sm">
             <div className="flex items-center space-x-2 text-[#C9A227] mb-1">
               <MapPin className="w-4 h-4" />
-              <span className="text-xs uppercase font-bold tracking-wider">Headingley</span>
+              <span className="text-xs uppercase font-bold tracking-wider">Central Leeds</span>
             </div>
-            <p className="text-xs text-[#CFCFCF]">109 Otley Rd, Leeds</p>
+            <p className="text-xs text-[#CFCFCF]">31a Great George St</p>
           </div>
 
           <div className="p-4 rounded-xl bg-[#171717]/40 border border-white/5 backdrop-blur-sm">
             <div className="flex items-center space-x-2 text-[#C9A227] mb-1">
               <Star className="w-4 h-4 fill-[#C9A227]" />
-              <span className="text-xs uppercase font-bold tracking-wider">4.9★ Rated</span>
+              <span className="text-xs uppercase font-bold tracking-wider">4.8★ Rated</span>
             </div>
-            <p className="text-xs text-[#CFCFCF]">186+ Google Reviews</p>
+            <p className="text-xs text-[#CFCFCF]">272+ Google Reviews</p>
           </div>
         </motion.div>
 
