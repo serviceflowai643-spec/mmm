@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Instagram, Heart, MessageCircle, ExternalLink, Sparkles, X, CheckCircle } from 'lucide-react';
+import { Instagram, Heart, MessageCircle, ExternalLink, X, CheckCircle } from 'lucide-react';
 import { BUSINESS_INFO, INSTAGRAM_POSTS } from '../data/shopData';
 import { InstagramPost } from '../types';
 
@@ -23,7 +23,7 @@ export const InstagramSection: React.FC = () => {
             className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#171717] border border-[#C9A227]/30 text-xs text-[#C9A227] font-semibold tracking-[0.2em] uppercase"
           >
             <Instagram className="w-4 h-4 text-[#C9A227]" />
-            <span>@hydeparkbarbers</span>
+            <span>@hussainbarbers</span>
           </motion.div>
 
           <motion.h2
@@ -43,7 +43,7 @@ export const InstagramSection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base sm:text-lg text-[#CFCFCF] font-light max-w-2xl mx-auto"
           >
-            Stay updated with our latest skin fades, beard transformations, and barbershop culture in Woodhouse, Leeds.
+            Stay updated with our latest skin fades, beard transformations, and barbershop culture in Hyde Park, Leeds.
           </motion.p>
 
           {/* Social Proof Bar */}
@@ -56,7 +56,7 @@ export const InstagramSection: React.FC = () => {
           >
             <div className="flex items-center space-x-2 px-4 py-2 rounded-xl bg-[#171717]/80 border border-white/10">
               <CheckCircle className="w-4 h-4 text-[#C9A227]" />
-              <span className="font-semibold text-white">@hydeparkbarbers</span>
+              <span className="font-semibold text-white">@hussainbarbers</span>
               <span className="text-white/40">• Official Page</span>
             </div>
 
@@ -89,7 +89,7 @@ export const InstagramSection: React.FC = () => {
               <div className="aspect-square w-full overflow-hidden relative">
                 <img
                   src={post.image}
-                  alt={`HYDE PARK BARBERS Instagram post ${idx + 1}`}
+                  alt={`Hussain Barbers Instagram post ${idx + 1}`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
 
@@ -99,7 +99,7 @@ export const InstagramSection: React.FC = () => {
                   <div className="flex justify-between items-center text-xs text-[#C9A227]">
                     <span className="flex items-center space-x-1 font-mono uppercase tracking-wider">
                       <Instagram className="w-4 h-4" />
-                      <span>HYDE PARK BARBERS</span>
+                      <span>HUSSAIN BARBERS</span>
                     </span>
                     <span className="text-white/60 font-mono text-[10px]">{post.date}</span>
                   </div>
@@ -142,7 +142,7 @@ export const InstagramSection: React.FC = () => {
             className="inline-flex items-center space-x-3 px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wider bg-[#171717] border-2 border-[#C9A227]/40 text-[#C9A227] hover:bg-[#C9A227] hover:text-[#090909] transition-all duration-300 shadow-xl group"
           >
             <Instagram className="w-5 h-5 text-[#C9A227] group-hover:text-[#090909] transition-colors" />
-            <span>Follow @hydeparkbarbers on Instagram</span>
+            <span>Follow @hussainbarbers on Instagram</span>
             <ExternalLink className="w-4 h-4" />
           </a>
         </div>
@@ -178,7 +178,7 @@ export const InstagramSection: React.FC = () => {
               <div className="md:w-1/2 aspect-square md:aspect-auto w-full bg-black">
                 <img
                   src={selectedPost.image}
-                  alt="HYDE PARK BARBERS Instagram post detail"
+                  alt="Hussain Barbers Instagram post detail"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -191,8 +191,8 @@ export const InstagramSection: React.FC = () => {
                       <Instagram className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-sm text-white">@hydeparkbarbers</h4>
-                      <p className="text-[10px] text-[#C9A227] uppercase tracking-wider font-mono">Woodhouse, Leeds</p>
+                      <h4 className="font-bold text-sm text-white">@hussainbarbers</h4>
+                      <p className="text-[10px] text-[#C9A227] uppercase tracking-wider font-mono">Hyde Park, Leeds</p>
                     </div>
                   </div>
 

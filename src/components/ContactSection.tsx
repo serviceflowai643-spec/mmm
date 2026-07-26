@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { BUSINESS_INFO } from '../data/shopData';
-import { MapPin, Phone, Mail, Clock, Instagram, Send, CheckCircle2 } from 'lucide-react';
+import { MapPin, Phone, Clock, Facebook, Send, CheckCircle2, ExternalLink } from 'lucide-react';
 
 export const ContactSection: React.FC = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -34,7 +34,7 @@ export const ContactSection: React.FC = () => {
             className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#171717] border border-[#C9A227]/30 text-xs text-[#C9A227] font-semibold tracking-[0.2em] uppercase"
           >
             <MapPin className="w-3.5 h-3.5" />
-            <span>Visit Us in Woodhouse, Leeds</span>
+            <span>Visit Us in Hyde Park, Leeds</span>
           </motion.div>
 
           <motion.h2
@@ -54,7 +54,7 @@ export const ContactSection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base text-[#CFCFCF] font-light max-w-xl mx-auto"
           >
-            Located at 11 Hyde Park Corner, 11 Woodhouse Ln, Woodhouse, Leeds LS6 1AF. Walk-ins subject to availability; appointments recommended.
+            Located at 65 Brudenell Grove, Leeds LS6 1HR, United Kingdom. Walk-ins and appointments are always welcome!
           </motion.p>
         </div>
 
@@ -72,18 +72,18 @@ export const ContactSection: React.FC = () => {
             <div className="p-6 rounded-2xl bg-[#171717]/80 border border-white/10 space-y-4 shadow-xl">
               <h3 className="font-cinzel text-xl font-bold text-white flex items-center space-x-2">
                 <MapPin className="w-5 h-5 text-[#C9A227]" />
-                <span>Our Address</span>
+                <span>Our Location</span>
               </h3>
 
               <div className="text-sm text-[#CFCFCF] space-y-1 font-light">
                 <p className="font-semibold text-white">{BUSINESS_INFO.name}</p>
                 <p>{BUSINESS_INFO.address}</p>
-                <p>{BUSINESS_INFO.city}, {BUSINESS_INFO.postcode}</p>
-                <p>United Kingdom</p>
+                <p>Hyde Park, {BUSINESS_INFO.city}</p>
+                <p>{BUSINESS_INFO.postcode}, United Kingdom</p>
               </div>
             </div>
 
-            {/* Contact Phone & Instagram */}
+            {/* Direct Contacts & Social */}
             <div className="p-6 rounded-2xl bg-[#171717]/80 border border-white/10 space-y-4 shadow-xl">
               <h3 className="font-cinzel text-xl font-bold text-white">Direct Contacts</h3>
 
@@ -97,13 +97,14 @@ export const ContactSection: React.FC = () => {
                 </a>
 
                 <a
-                  href={BUSINESS_INFO.instagram}
+                  href={BUSINESS_INFO.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-[#CFCFCF] hover:text-[#C9A227] transition-colors"
+                  className="flex items-center space-x-3 text-[#CFCFCF] hover:text-[#1877F2] transition-colors"
                 >
-                  <Instagram className="w-4 h-4 text-[#C9A227]" />
-                  <span>@hydeparkbarbers</span>
+                  <Facebook className="w-4 h-4 text-[#1877F2] fill-current" />
+                  <span>Official Facebook Page</span>
+                  <ExternalLink className="w-3.5 h-3.5 opacity-60 ml-auto" />
                 </a>
               </div>
             </div>
@@ -138,8 +139,8 @@ export const ContactSection: React.FC = () => {
             {/* Interactive Map Embed */}
             <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl h-80 relative bg-[#171717]">
               <iframe
-                title="HYDE PARK BARBERS Location Map"
-                src="https://maps.google.com/maps?q=11+Hyde+Park+Corner,+11+Woodhouse+Ln,+Woodhouse,+Leeds+LS6+1AF&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                title="Hussain Barbers Location Map"
+                src="https://maps.google.com/maps?q=65+Brudenell+Grove,+Leeds+LS6+1HR,+UK&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(0.9) invert(0.9) contrast(1.2)' }}
@@ -147,8 +148,8 @@ export const ContactSection: React.FC = () => {
                 loading="lazy"
               />
               <div className="absolute top-4 left-4 p-3 rounded-xl bg-[#090909]/90 backdrop-blur-md border border-[#C9A227]/40 text-xs">
-                <p className="font-bold text-white">HYDE PARK BARBERS</p>
-                <p className="text-[10px] text-[#C9A227]">11 Hyde Park Corner, Woodhouse, Leeds LS6 1AF</p>
+                <p className="font-bold text-white">Hussain Barbers</p>
+                <p className="text-[10px] text-[#C9A227]">65 Brudenell Grove, Hyde Park, Leeds LS6 1HR</p>
               </div>
             </div>
 
@@ -199,7 +200,7 @@ export const ContactSection: React.FC = () => {
                       required
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                      placeholder="e.g. Booking inquiry or group haircut request"
+                      placeholder="e.g. Group haircut or appointment inquiry"
                       className="w-full px-4 py-3 rounded-xl bg-[#090909] border border-white/10 text-white text-sm focus:border-[#C9A227] focus:outline-none"
                     />
                   </div>

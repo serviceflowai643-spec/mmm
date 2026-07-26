@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scissors, ArrowUp, Instagram, MapPin, Phone, Mail, ExternalLink } from 'lucide-react';
+import { Scissors, ArrowUp, Facebook, MapPin, Phone, Mail, ExternalLink, Star } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/shopData';
 
 export const Footer: React.FC = () => {
@@ -21,29 +21,29 @@ export const Footer: React.FC = () => {
               </div>
               <div>
                 <span className="block font-cinzel text-lg font-bold uppercase tracking-wider text-white">
-                  HYDE PARK BARBERS
+                  HUSSAIN BARBERS
                 </span>
                 <span className="block text-[9px] uppercase tracking-[0.25em] text-[#C9A227]">
-                  WOODHOUSE • LS6 1AF
+                  HYDE PARK • LEEDS LS6 1HR
                 </span>
               </div>
             </div>
 
             <p className="text-xs text-[#CFCFCF] font-light leading-relaxed">
-              Premium Barbering Experience in Woodhouse, Leeds. Expert haircuts, precision skin fades, and professional beard grooming at 11 Hyde Park Corner.
+              Premium Barbering Experience in Hyde Park, Leeds. Professional haircuts, precision skin fades, beard grooming and exceptional customer service at 65 Brudenell Grove.
             </p>
 
-            <div>
+            <div className="flex flex-col space-y-2 pt-1">
               <a
-                href={BUSINESS_INFO.instagram}
+                href={BUSINESS_INFO.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-[#E1306C] via-[#FD1D1D] to-[#F56040] text-white shadow-md hover:brightness-110 transition-all duration-300"
-                id="footer-instagram-btn"
+                className="inline-flex items-center justify-center space-x-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#1877F2] text-white shadow-md hover:bg-[#166FE5] transition-all duration-300"
+                id="footer-facebook-btn"
               >
-                <Instagram className="w-4 h-4" />
-                <span>Follow Us on Instagram</span>
-                <ExternalLink className="w-3.5 h-3.5" />
+                <Facebook className="w-4 h-4 fill-current" />
+                <span>Follow Us on Facebook</span>
+                <ExternalLink className="w-3.5 h-3.5 opacity-80" />
               </a>
             </div>
           </div>
@@ -58,9 +58,9 @@ export const Footer: React.FC = () => {
               <li><a href="#services" className="hover:text-white transition-colors">Services & Pricing</a></li>
               <li><a href="#team" className="hover:text-white transition-colors">Master Barbers</a></li>
               <li><a href="#gallery" className="hover:text-white transition-colors">Visual Gallery</a></li>
-              <li><a href="#instagram" className="hover:text-white transition-colors">Instagram Feed</a></li>
+              <li><a href="#facebook" className="hover:text-white transition-colors">Facebook Feed</a></li>
               <li><a href="#reviews" className="hover:text-white transition-colors">Client Reviews</a></li>
-              <li><a href="#booking" className="hover:text-white transition-colors">Book Online</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors">Location & Hours</a></li>
             </ul>
           </div>
 
@@ -72,7 +72,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-xs text-[#CFCFCF] font-light">
               <li className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-[#C9A227] shrink-0 mt-0.5" />
-                <span>{BUSINESS_INFO.address}, {BUSINESS_INFO.city} {BUSINESS_INFO.postcode}, UK</span>
+                <span>65 Brudenell Grove, Hyde Park, Leeds LS6 1HR, UK</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-[#C9A227] shrink-0" />
@@ -81,6 +81,10 @@ export const Footer: React.FC = () => {
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-[#C9A227] shrink-0" />
                 <span>{BUSINESS_INFO.email}</span>
+              </li>
+              <li className="flex items-center space-x-2 pt-1 text-[#C9A227]">
+                <Star className="w-4 h-4 fill-[#C9A227] shrink-0" />
+                <span className="font-semibold text-xs">4.8★ Rating (158 Google Reviews)</span>
               </li>
             </ul>
           </div>
@@ -93,7 +97,7 @@ export const Footer: React.FC = () => {
             <div className="space-y-1 text-xs text-[#CFCFCF] font-mono">
               <p>Mon - Wed: 09:00 - 18:30</p>
               <p>Thu - Fri: 09:00 - 19:00</p>
-              <p>Sat: 08:30 - 18:00</p>
+              <p>Sat: 08:30 - 18:30</p>
               <p>Sun: 10:00 - 16:00</p>
             </div>
           </div>
@@ -102,7 +106,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#CFCFCF]/60 space-y-4 sm:space-y-0">
-          <p>© {new Date().getFullYear()} HYDE PARK BARBERS Leeds. All rights reserved. 11 Hyde Park Corner, Woodhouse, LS6 1AF.</p>
+          <p>© {new Date().getFullYear()} Hussain Barbers Leeds. All rights reserved. 65 Brudenell Grove, LS6 1HR.</p>
 
           <button
             onClick={scrollToTop}

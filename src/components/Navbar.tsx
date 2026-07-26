@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Scissors, Phone, MapPin, Menu, X, Calendar, Instagram } from 'lucide-react';
+import { Scissors, Phone, MapPin, Menu, X, Calendar, Facebook, Star, Clock } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/shopData';
 
 interface NavbarProps {
@@ -28,7 +28,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
     { name: 'Services', href: '#services' },
     { name: 'Barbers', href: '#team' },
     { name: 'Gallery', href: '#gallery' },
-    { name: 'Instagram', href: '#instagram' },
+    { name: 'Facebook', href: '#facebook' },
     { name: 'Reviews', href: '#reviews' },
     { name: 'Location', href: '#contact' },
   ];
@@ -37,11 +37,43 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
         isScrolled
-          ? 'bg-[#090909]/90 backdrop-blur-xl border-b border-white/10 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.8)]'
-          : 'bg-gradient-to-b from-[#090909]/90 via-[#090909]/40 to-transparent py-5'
+          ? 'bg-[#090909]/95 backdrop-blur-xl border-b border-white/10 py-2.5 shadow-[0_10px_30px_rgba(0,0,0,0.85)]'
+          : 'bg-gradient-to-b from-[#090909]/95 via-[#090909]/60 to-transparent py-4'
       }`}
       id="main-navbar"
     >
+      {/* Top Announcement Bar - Opening Hours & Badge */}
+      <div className="hidden lg:block bg-[#121212]/90 border-b border-white/5 py-1 px-4 text-[11px] text-[#CFCFCF] mb-2">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="flex items-center space-x-6">
+            <span className="flex items-center space-x-1.5">
+              <MapPin className="w-3.5 h-3.5 text-[#C9A227]" />
+              <span>{BUSINESS_INFO.address}, {BUSINESS_INFO.city} {BUSINESS_INFO.postcode}</span>
+            </span>
+            <span className="flex items-center space-x-1.5">
+              <Clock className="w-3.5 h-3.5 text-[#C9A227]" />
+              <span>Mon-Sat: 09:00 - 18:30 | Sun: 10:00 - 16:00</span>
+            </span>
+          </div>
+
+          <div className="flex items-center space-x-4">
+            <span className="flex items-center space-x-1 text-[#C9A227] font-semibold">
+              <Star className="w-3.5 h-3.5 fill-[#C9A227] text-[#C9A227]" />
+              <span>{BUSINESS_INFO.rating}★ Google Rating ({BUSINESS_INFO.reviewsCount} Reviews)</span>
+            </span>
+            <a
+              href={BUSINESS_INFO.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#C9A227] transition-colors flex items-center space-x-1"
+            >
+              <Facebook className="w-3 h-3 text-[#1877F2]" />
+              <span>Official Facebook Page</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
@@ -56,7 +88,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             </div>
             <div>
               <span className="block font-cinzel text-lg sm:text-xl font-bold tracking-[0.15em] uppercase text-white group-hover:text-gold-gradient transition-colors">
-                HYDE PARK
+                HUSSAIN
               </span>
               <span className="block text-[9px] uppercase tracking-[0.3em] text-[#C9A227] font-semibold -mt-1">
                 BARBERS • LEEDS
@@ -65,7 +97,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center space-x-7" id="desktop-nav">
+          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8" id="desktop-nav">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -78,20 +110,21 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           </nav>
 
           {/* Action CTAs */}
-          <div className="hidden lg:flex items-center space-x-3">
+          <div className="hidden sm:flex items-center space-x-3">
             <a
-              href={BUSINESS_INFO.instagram}
+              href={BUSINESS_INFO.facebook}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-full border border-white/10 hover:border-[#C9A227] text-[#C9A227] hover:bg-[#C9A227] hover:text-[#090909] transition-all"
-              aria-label="Instagram Page"
+              className="p-2.5 rounded-full border border-[#1877F2]/40 bg-[#1877F2]/10 hover:bg-[#1877F2] text-[#1877F2] hover:text-white transition-all shadow-sm"
+              aria-label="Facebook Page"
+              title="Official Facebook Page"
             >
-              <Instagram className="w-4 h-4" />
+              <Facebook className="w-4 h-4 fill-current" />
             </a>
 
             <a
               href={`tel:${BUSINESS_INFO.phone}`}
-              className="flex items-center space-x-2 text-xs text-[#CFCFCF] hover:text-white px-3 py-2 rounded-full border border-white/10 hover:border-white/30 transition-all bg-[#171717]/40 backdrop-blur-md"
+              className="hidden lg:flex items-center space-x-2 text-xs text-[#CFCFCF] hover:text-white px-3.5 py-2 rounded-full border border-white/10 hover:border-white/30 transition-all bg-[#171717]/60 backdrop-blur-md"
               id="nav-phone-link"
             >
               <Phone className="w-3.5 h-3.5 text-[#C9A227]" />
@@ -108,11 +141,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Toggle Button */}
           <div className="flex md:hidden items-center space-x-2">
             <button
               onClick={onOpenBooking}
-              className="px-3 py-2 text-[11px] font-bold uppercase tracking-wider bg-[#C9A227] text-[#090909] rounded-full shadow-md"
+              className="px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider bg-[#C9A227] text-[#090909] rounded-full shadow-md"
               id="mobile-nav-book-cta"
             >
               Book
@@ -139,13 +172,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-            className="md:hidden bg-[#090909]/98 border-b border-[#C9A227]/30 backdrop-blur-2xl overflow-hidden"
+            className="md:hidden bg-[#090909]/98 border-b border-[#C9A227]/30 backdrop-blur-2xl overflow-hidden mt-2"
             id="mobile-drawer-menu"
           >
             <div className="px-6 pt-4 pb-8 space-y-4">
-              <div className="flex items-center space-x-2 text-xs text-[#C9A227] pb-3 border-b border-white/10">
-                <MapPin className="w-4 h-4" />
-                <span>11 Hyde Park Corner, Woodhouse, LS6 1AF</span>
+              <div className="flex items-center justify-between text-xs text-[#C9A227] pb-3 border-b border-white/10">
+                <span className="flex items-center space-x-1.5">
+                  <MapPin className="w-4 h-4" />
+                  <span>{BUSINESS_INFO.address}, Hyde Park, {BUSINESS_INFO.postcode}</span>
+                </span>
+                <span className="font-bold flex items-center space-x-1">
+                  <Star className="w-3.5 h-3.5 fill-[#C9A227]" />
+                  <span>4.8★</span>
+                </span>
               </div>
 
               {navLinks.map((link) => (
@@ -169,17 +208,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
                   id="mobile-drawer-book-btn"
                 >
                   <Calendar className="w-4 h-4" />
-                  <span>Book Appointment Online</span>
+                  <span>Book Appointment</span>
                 </button>
 
                 <a
-                  href={BUSINESS_INFO.instagram}
+                  href={BUSINESS_INFO.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3 rounded-full text-xs font-bold uppercase tracking-[0.15em] bg-gradient-to-r from-[#E1306C] via-[#FD1D1D] to-[#F56040] text-white flex items-center justify-center space-x-2 shadow-md"
+                  className="w-full py-3 rounded-full text-xs font-bold uppercase tracking-[0.15em] bg-[#1877F2] text-white flex items-center justify-center space-x-2 shadow-md hover:brightness-110"
                 >
-                  <Instagram className="w-4 h-4" />
-                  <span>Follow @hydeparkbarbers</span>
+                  <Facebook className="w-4 h-4 fill-current" />
+                  <span>Follow us on Facebook</span>
                 </a>
 
                 <a

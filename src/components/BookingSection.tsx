@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { SERVICES, TEAM, BUSINESS_INFO } from '../data/shopData';
-import { Calendar as CalendarIcon, Clock, User, CheckCircle, ArrowRight, ArrowLeft, ExternalLink, Sparkles, Phone } from 'lucide-react';
+import { Clock, User, CheckCircle, ArrowRight, ArrowLeft, ExternalLink, Sparkles } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 interface BookingSectionProps {
@@ -37,15 +37,12 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
     for (let i = 0; i < 7; i++) {
       const d = new Date(today);
       d.setDate(today.getDate() + i);
-      // Skip Sundays
-      if (d.getDay() !== 0) {
-        dates.push({
-          fullDate: d.toISOString().split('T')[0],
-          dayName: d.toLocaleDateString('en-GB', { weekday: 'short' }),
-          dayNum: d.getDate(),
-          monthName: d.toLocaleDateString('en-GB', { month: 'short' }),
-        });
-      }
+      dates.push({
+        fullDate: d.toISOString().split('T')[0],
+        dayName: d.toLocaleDateString('en-GB', { weekday: 'short' }),
+        dayNum: d.getDate(),
+        monthName: d.toLocaleDateString('en-GB', { month: 'short' }),
+      });
     }
     return dates;
   };
@@ -95,19 +92,19 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
             </h2>
 
             <p className="text-xs sm:text-sm text-[#CFCFCF] font-light">
-              Reserve your seat at 107 Roundhay Rd, Harehills, Leeds with our expert barbers.
+              Reserve your seat at 65 Brudenell Grove, Hyde Park, Leeds with our experienced barbers.
             </p>
 
-            {/* Direct Booksy Link Option */}
+            {/* Direct Website Link Option */}
             <div className="pt-2">
               <a
-                href={BUSINESS_INFO.booksyUrl}
+                href={BUSINESS_INFO.website}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 text-xs font-semibold text-[#C9A227] hover:underline"
                 id="booksy-external-link"
               >
-                <span>Prefer to book directly on Booksy?</span>
+                <span>Visit official website</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
@@ -178,7 +175,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                   </div>
                   <div className="flex justify-between border-b border-white/10 pb-2">
                     <span className="text-[#CFCFCF]">Barber:</span>
-                    <span className="text-white">{currentBarberObj ? currentBarberObj.name : 'Any Master Barber'}</span>
+                    <span className="text-white">{currentBarberObj ? currentBarberObj.name : 'Any Available Barber'}</span>
                   </div>
                   <div className="flex justify-between border-b border-white/10 pb-2">
                     <span className="text-[#CFCFCF]">Date & Time:</span>
@@ -186,12 +183,12 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                   </div>
                   <div className="flex justify-between">
                     <span className="text-[#CFCFCF]">Location:</span>
-                    <span className="text-white">107 Roundhay Rd, Harehills, Leeds LS8 5AJ</span>
+                    <span className="text-white">65 Brudenell Grove, Hyde Park, Leeds LS6 1HR</span>
                   </div>
                 </div>
 
                 <p className="text-xs text-[#CFCFCF]/80 max-w-md mx-auto">
-                  A confirmation email has been dispatched to <span className="text-white font-mono">{clientEmail}</span>. We look forward to welcoming you for artisan coffee and a precision cut!
+                  A confirmation email has been dispatched to <span className="text-white font-mono">{clientEmail}</span>. We look forward to welcoming you with complimentary tea or coffee!
                 </p>
 
                 <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
@@ -206,12 +203,12 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                   </button>
 
                   <a
-                    href={BUSINESS_INFO.booksyUrl}
+                    href={BUSINESS_INFO.website}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider bg-[#C9A227] text-[#090909] shadow-lg flex items-center space-x-2"
                   >
-                    <span>View on Booksy</span>
+                    <span>Official Website</span>
                     <ExternalLink className="w-4 h-4" />
                   </a>
                 </div>
@@ -280,7 +277,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                       Step 2: Choose Your Barber
                     </h3>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                       <div
                         onClick={() => setSelectedBarber('any')}
                         className={`p-4 rounded-xl border text-center cursor-pointer transition-all flex flex-col items-center justify-center space-y-2 ${
@@ -293,7 +290,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                           <User className="w-6 h-6" />
                         </div>
                         <h4 className="font-bold text-sm text-white">Any Available Barber</h4>
-                        <p className="text-[10px] text-[#CFCFCF]">First available master barber</p>
+                        <p className="text-[10px] text-[#CFCFCF]">First available barber</p>
                       </div>
 
                       {TEAM.map((b) => (
@@ -440,7 +437,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                           required
                           value={clientName}
                           onChange={(e) => setClientName(e.target.value)}
-                          placeholder="e.g. Alexander Wright"
+                          placeholder="e.g. Alex Smith"
                           className="w-full px-4 py-3 rounded-xl bg-[#090909] border border-white/10 text-white text-sm focus:border-[#C9A227] focus:outline-none"
                         />
                       </div>
@@ -465,7 +462,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                         required
                         value={clientEmail}
                         onChange={(e) => setClientEmail(e.target.value)}
-                        placeholder="e.g. alexander@example.com"
+                        placeholder="e.g. alex@example.com"
                         className="w-full px-4 py-3 rounded-xl bg-[#090909] border border-white/10 text-white text-sm focus:border-[#C9A227] focus:outline-none"
                       />
                     </div>
@@ -476,7 +473,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                         rows={2}
                         value={clientNotes}
                         onChange={(e) => setClientNotes(e.target.value)}
-                        placeholder="e.g. Prefer quiet appointment, wedding haircut, or specific product style..."
+                        placeholder="e.g. Low skin fade request, beard shaping preference..."
                         className="w-full px-4 py-3 rounded-xl bg-[#090909] border border-white/10 text-white text-sm focus:border-[#C9A227] focus:outline-none"
                       />
                     </div>

@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { GALLERY, BUSINESS_INFO } from '../data/shopData';
 import { GalleryItem } from '../types';
-import { Camera, Maximize2, X, MapPin, Instagram, ExternalLink } from 'lucide-react';
+import { Camera, Maximize2, X, MapPin, Facebook, ExternalLink } from 'lucide-react';
 
 export const GallerySection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('All');
   const [lightboxItem, setLightboxItem] = useState<GalleryItem | null>(null);
 
-  const tabs = ['All', 'Interior & Shop', 'Skin Fades & Cuts', 'Beard Grooming'];
+  const tabs = ['All', 'Interior & Shop', 'Skin Fades & Cuts', 'Beard Grooming', 'Atmosphere'];
 
   const filteredItems = activeTab === 'All'
     ? GALLERY
@@ -47,7 +47,7 @@ export const GallerySection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base text-[#CFCFCF] font-light"
           >
-            A visual showcase of real craftsmanship, friendly atmosphere, and everyday life at 11 Hyde Park Corner, Woodhouse, Leeds.
+            A visual showcase of real craftsmanship, friendly community atmosphere, and everyday life at 65 Brudenell Grove, Hyde Park, Leeds.
           </motion.p>
         </div>
 
@@ -110,17 +110,17 @@ export const GallerySection: React.FC = () => {
           </AnimatePresence>
         </motion.div>
 
-        {/* Prominent Follow Us on Instagram button */}
+        {/* Prominent Follow Us on Facebook button */}
         <div className="mt-12 text-center">
           <a
-            href={BUSINESS_INFO.instagram}
+            href={BUSINESS_INFO.facebook}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center space-x-3 px-8 py-3.5 rounded-full font-bold text-xs uppercase tracking-wider bg-gradient-to-r from-[#E1306C] via-[#FD1D1D] to-[#F56040] text-white hover:brightness-110 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
-            id="gallery-instagram-btn"
+            className="inline-flex items-center space-x-3 px-8 py-3.5 rounded-full font-bold text-xs uppercase tracking-wider bg-[#1877F2] text-white hover:bg-[#166FE5] shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
+            id="gallery-facebook-btn"
           >
-            <Instagram className="w-4 h-4" />
-            <span>Follow Us on Instagram (@hydeparkbarbers)</span>
+            <Facebook className="w-4 h-4 fill-current" />
+            <span>Follow Us on Facebook (Hussain Barbers)</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>

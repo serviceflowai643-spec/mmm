@@ -8,22 +8,22 @@ export const AboutSection: React.FC = () => {
     {
       icon: Scissors,
       title: 'Precision Barbering',
-      description: 'Expert skin fades, classic scissor haircuts, restyles, and razor line-ups tailored to your style.'
+      description: 'Expert skin fades, classic scissor haircuts, restyles, and razor line-ups tailored to your individual style.'
     },
     {
-      icon: HeartHandshake,
-      title: 'Welcoming Atmosphere',
-      description: 'Relaxed and friendly environment where every client is greeted with warm, attentive hospitality.'
+      icon: Coffee,
+      title: 'Complimentary Hot Drinks',
+      description: 'Enjoy fresh, comforting tea or coffee with every haircut in a friendly, welcoming environment.'
     },
     {
       icon: Star,
-      title: 'Top Customer Service',
-      description: 'Proudly holding a 4.9★ rating from 113+ Google reviews for exceptional service and care.'
+      title: '4.8★ Google Rating',
+      description: 'Proudly backed by 158+ glowing Google reviews from satisfied students, locals, and regulars in Leeds.'
     },
     {
       icon: ShieldCheck,
-      title: 'Attention to Detail',
-      description: 'We take time with every appointment to ensure clean lines, sharp gradients, and 100% satisfaction.'
+      title: 'Affordable Excellence',
+      description: 'Unbeatable value for students and locals alike without ever compromising on quality or attention to detail.'
     }
   ];
 
@@ -43,7 +43,7 @@ export const AboutSection: React.FC = () => {
             className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#171717] border border-[#C9A227]/30 text-xs text-[#C9A227] font-semibold tracking-[0.2em] uppercase"
           >
             <Sparkles className="w-3.5 h-3.5" />
-            <span>About HYDE PARK BARBERS</span>
+            <span>About Hussain Barbers</span>
           </motion.div>
 
           <motion.h2
@@ -53,7 +53,7 @@ export const AboutSection: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="font-cinzel text-3xl sm:text-5xl font-bold uppercase tracking-[0.05em] text-white"
           >
-            Premium Barbering in <span className="text-gold-gradient">Woodhouse, Leeds</span>
+            Trusted Barbershop in <span className="text-gold-gradient">Hyde Park, Leeds</span>
           </motion.h2>
 
           <motion.p
@@ -63,7 +63,7 @@ export const AboutSection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base sm:text-lg text-[#CFCFCF] font-light leading-relaxed"
           >
-            HYDE PARK BARBERS is one of the highest-rated barbershops in Woodhouse, Leeds, proudly holding a 4.9-star rating from 113 satisfied customers.
+            Hussain Barbers is one of Leeds' most trusted neighbourhood barbershops, proudly maintaining a 4.8-star Google rating from 158 satisfied customers.
           </motion.p>
         </div>
 
@@ -83,21 +83,21 @@ export const AboutSection: React.FC = () => {
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
-                    alt="HYDE PARK BARBERS Shop Interior"
+                    alt="Hussain Barbers Shop Interior"
                     className="w-full h-64 sm:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Woodhouse, Leeds</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Hyde Park, Leeds</span>
                 </div>
 
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=80"
-                    alt="Friendly Barbers at HYDE PARK BARBERS"
+                    alt="Warm Welcome at Hussain Barbers"
                     className="w-full h-44 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Welcoming Atmosphere</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">Free Tea & Coffee</span>
                 </div>
               </div>
 
@@ -115,19 +115,19 @@ export const AboutSection: React.FC = () => {
                 <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
-                    alt="11 Hyde Park Corner Location"
+                    alt="65 Brudenell Grove Location"
                     className="w-full h-64 sm:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">LS6 1AF</span>
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono text-[#C9A227] tracking-widest uppercase">LS6 1HR</span>
                 </div>
               </div>
             </div>
 
             {/* Floating Gold Emblem Badge */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 p-5 rounded-2xl glass-card-gold gold-border-glow text-center shadow-2xl">
-              <span className="block font-cinzel text-3xl font-black text-gold-gradient">4.9★</span>
-              <span className="block text-[10px] uppercase tracking-[0.2em] text-[#FAFAFA] font-bold mt-1">113 Reviews</span>
+              <span className="block font-cinzel text-3xl font-black text-gold-gradient">4.8★</span>
+              <span className="block text-[10px] uppercase tracking-[0.2em] text-[#FAFAFA] font-bold mt-1">158 Reviews</span>
             </div>
           </motion.div>
 
@@ -141,13 +141,13 @@ export const AboutSection: React.FC = () => {
           >
             <div className="space-y-4">
               <h3 className="font-cinzel text-2xl sm:text-3xl font-bold text-white">
-                Top Rated Barbershop in Woodhouse, Leeds
+                Known For Outstanding Hospitality & Great Value
               </h3>
               <p className="text-[#CFCFCF] text-sm sm:text-base leading-relaxed font-light">
-                HYDE PARK BARBERS is one of the highest-rated barbershops in Woodhouse, Leeds, proudly holding a 4.9-star rating from 113 satisfied customers.
+                Known for outstanding hospitality, affordable prices and consistently excellent haircuts, our experienced barbers ensure every client leaves looking and feeling their best.
               </p>
               <p className="text-[#CFCFCF] text-sm sm:text-base leading-relaxed font-light">
-                Known for outstanding customer service, attention to detail and a welcoming atmosphere, our skilled team delivers premium haircuts for clients of all ages.
+                Complimentary tea, coffee and a warm welcome make every visit enjoyable. Whether you are a student returning for term or a local resident looking for a reliable haircut, you'll feel right at home at Hussain Barbers.
               </p>
             </div>
 
@@ -157,8 +157,8 @@ export const AboutSection: React.FC = () => {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm text-white uppercase tracking-wider">11 Hyde Park Corner, 11 Woodhouse Ln, Woodhouse, Leeds LS6 1AF</h4>
-                  <p className="text-xs text-[#CFCFCF]">Conveniently located in Woodhouse, Leeds</p>
+                  <h4 className="font-bold text-sm text-white uppercase tracking-wider">65 Brudenell Grove, Leeds LS6 1HR, United Kingdom</h4>
+                  <p className="text-xs text-[#CFCFCF]">Conveniently located in Hyde Park, Leeds</p>
                 </div>
               </div>
             </div>

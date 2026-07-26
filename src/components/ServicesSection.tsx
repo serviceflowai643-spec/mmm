@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { SERVICES } from '../data/shopData';
-import { Clock, CheckCircle2, Sparkles, ArrowRight, Scissors } from 'lucide-react';
+import { Clock, CheckCircle2, Sparkles, ArrowRight, Scissors, Coffee } from 'lucide-react';
 import { Service } from '../types';
 
 interface ServicesSectionProps {
@@ -11,7 +11,7 @@ interface ServicesSectionProps {
 export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectService }) => {
   const [activeCategory, setActiveCategory] = useState<string>('All');
 
-  const categories = ['All', 'Cuts', 'Beard', 'Combos', 'Packages', 'Junior'];
+  const categories = ['All', 'Cuts', 'Beard', 'Combos', 'Junior', 'Wellness'];
 
   const filteredServices = activeCategory === 'All'
     ? SERVICES
@@ -33,7 +33,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
             className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#171717] border border-[#C9A227]/30 text-xs text-[#C9A227] font-semibold tracking-[0.2em] uppercase"
           >
             <Scissors className="w-3.5 h-3.5" />
-            <span>Bespoke Menu & Pricing</span>
+            <span>Barbering Menu & Pricing</span>
           </motion.div>
 
           <motion.h2
@@ -43,7 +43,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
             transition={{ delay: 0.1 }}
             className="font-cinzel text-3xl sm:text-5xl font-bold uppercase tracking-[0.05em] text-white"
           >
-            Services <span className="text-gold-gradient">& Packages</span>
+            Services <span className="text-gold-gradient">& Pricing</span>
           </motion.h2>
 
           <motion.p
@@ -53,7 +53,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
             transition={{ delay: 0.2 }}
             className="text-base text-[#CFCFCF] font-light"
           >
-            Every service includes a tailored style consultation, scalp refresh wash, precision finishing, and complimentary artisan coffee.
+            All services include style consultation, razor neck clean, hot towel finish, and complimentary fresh tea or coffee.
           </motion.p>
         </div>
 
@@ -98,7 +98,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                 {service.isPopular && (
                   <div className="absolute -top-3 right-6 px-3 py-1 rounded-full bg-gradient-to-r from-[#C9A227] to-[#E6C865] text-[#090909] font-bold text-[10px] uppercase tracking-[0.2em] shadow-md flex items-center space-x-1">
                     <Sparkles className="w-3 h-3" />
-                    <span>Signature Choice</span>
+                    <span>Popular Choice</span>
                   </div>
                 )}
 

@@ -78,12 +78,12 @@ export const IntroLoader: React.FC<IntroLoaderProps> = ({ onComplete }) => {
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="font-cinzel text-3xl sm:text-5xl font-bold tracking-[0.2em] uppercase text-gold-gradient mb-3"
             >
-              HYDE PARK BARBERS
+              HUSSAIN BARBERS
             </motion.h1>
           )}
         </AnimatePresence>
 
-        {/* Single Gold Razor Line SVG drawing animation */}
+        {/* Single Gold Line SVG drawing animation */}
         <div className="relative w-full max-w-xs h-1 my-4 flex items-center justify-center">
           <svg className="w-full h-2 overflow-visible" viewBox="0 0 300 2">
             <motion.path
@@ -118,13 +118,13 @@ export const IntroLoader: React.FC<IntroLoaderProps> = ({ onComplete }) => {
                 PREMIUM BARBERING EXPERIENCE
               </p>
               <p className="text-[10px] sm:text-xs text-[#C9A227]/80 tracking-[0.2em] font-light">
-                11 HYDE PARK CORNER • WOODHOUSE, LEEDS LS6 1AF
+                65 BRUDENELL GROVE • HYDE PARK, LEEDS LS6 1HR
               </p>
             </motion.div>
           )}
         </AnimatePresence>
 
-        {/* Ambient Sound Wave Visualizer Pulse */}
+        {/* Ambient Pulse */}
         <div className="flex items-end justify-center space-x-1.5 h-6 mt-8">
           {[0.4, 0.8, 0.5, 0.9, 0.6, 0.3, 0.7].map((heightScale, index) => (
             <motion.div

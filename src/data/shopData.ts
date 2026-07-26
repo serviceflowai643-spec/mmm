@@ -1,23 +1,27 @@
-import { Barber, BusinessInfo, GalleryItem, InstagramPost, Review, Service } from '../types';
+import { Barber, BusinessInfo, GalleryItem, FacebookPost, Review, Service } from '../types';
 
 export const BUSINESS_INFO: BusinessInfo = {
-  name: "HYDE PARK BARBERS",
-  tagline: "Premium Barbering Experience in Woodhouse, Leeds",
-  address: "11 Hyde Park Corner, 11 Woodhouse Ln, Woodhouse",
-  postcode: "LS6 1AF",
+  name: "Hussain Barbers",
+  tagline: "Premium Barbering Experience in Hyde Park, Leeds",
+  address: "65 Brudenell Grove",
+  postcode: "LS6 1HR",
   city: "Leeds",
-  phone: "+44 7786 942694",
-  email: "contact@hydeparkbarbersleeds.com",
-  instagram: "https://www.instagram.com/hydeparkbarbers/",
-  booksyUrl: "https://hydeparkbarbersleeds.booksy.com",
-  googleMapsUrl: "https://maps.google.com/?q=11+Hyde+Park+Corner,+11+Woodhouse+Ln,+Woodhouse,+Leeds+LS6+1AF",
+  phone: "+44 7765 365536",
+  email: "contact@hussainbarbershop.co.uk",
+  website: "https://hussainbarbershop.co.uk",
+  facebook: "https://www.facebook.com/17hussainbarber/?locale=en_GB",
+  instagram: "https://www.facebook.com/17hussainbarber/?locale=en_GB",
+  booksyUrl: "https://hussainbarbershop.co.uk",
+  googleMapsUrl: "https://maps.google.com/?q=65+Brudenell+Grove,+Leeds+LS6+1HR",
+  rating: 4.8,
+  reviewsCount: 158,
   hours: [
     { day: "Monday", time: "09:00 - 18:30" },
     { day: "Tuesday", time: "09:00 - 18:30" },
     { day: "Wednesday", time: "09:00 - 18:30" },
     { day: "Thursday", time: "09:00 - 19:00" },
     { day: "Friday", time: "09:00 - 19:00" },
-    { day: "Saturday", time: "08:30 - 18:00" },
+    { day: "Saturday", time: "08:30 - 18:30" },
     { day: "Sunday", time: "10:00 - 16:00" }
   ]
 };
@@ -26,8 +30,8 @@ export const SERVICES: Service[] = [
   {
     id: 'skin-fade',
     title: 'Skin Fade',
-    price: '£22',
-    duration: '45 mins',
+    price: '£20',
+    duration: '40 mins',
     category: 'Cuts',
     description: 'Precision zero-gap foil skin fade seamlessly blended into your desired top style with clean razor line-up.',
     includes: ['Zero-gap foil fade', 'Precision top cut & texturising', 'Scalp refresh', 'Hot towel finish', 'Styling consultation'],
@@ -37,10 +41,10 @@ export const SERVICES: Service[] = [
   {
     id: 'classic-haircut',
     title: 'Classic Haircut',
-    price: '£18',
-    duration: '35 mins',
+    price: '£16',
+    duration: '30 mins',
     category: 'Cuts',
-    description: 'Personal consultation, precision haircut, blow-dry styling & hot towel neck finish.',
+    description: 'Personal consultation, precision haircut, blow-dry styling & hot towel neck finish with complimentary tea or coffee.',
     includes: ['Hair consultation', 'Precision scissor & clipper work', 'Blow dry & matte product styling', 'Hot towel neck clean'],
     isPopular: true,
     recommendedFor: 'Clean standard trim or timeless classic style'
@@ -48,40 +52,29 @@ export const SERVICES: Service[] = [
   {
     id: 'beard-trim',
     title: 'Beard Trim',
-    price: '£12',
-    duration: '25 mins',
+    price: '£10',
+    duration: '20 mins',
     category: 'Beard',
-    description: 'Clipper shape, cheek & neck line razor edging, hot towel steam & nourishing beard oil.',
+    description: 'Clipper shape, cheek & neck line razor edging, hot towel steam & nourishing beard oil treatment.',
     includes: ['Length reduction & shaping', 'Razor cheek & neck line-up', 'Hot towel steam treatment', 'Beard balm & oil massage'],
     recommendedFor: 'Maintaining clean beard lines & sharp shape'
   },
   {
     id: 'hair-beard-package',
     title: 'Hair & Beard Package',
-    price: '£28',
-    duration: '55 mins',
+    price: '£24',
+    duration: '50 mins',
     category: 'Combos',
-    description: 'Complete grooming package: Custom haircut or skin fade plus full beard sculpt, razor edging & hot towel finish.',
-    includes: ['Precision haircut or skin fade', 'Full beard sculpt & razor edge', 'Hot towel steam massage', 'Premium styling finish'],
+    description: 'Our signature combo: Custom haircut or skin fade plus full beard sculpt, razor edging & relaxing hot towel treatment.',
+    includes: ['Precision haircut or skin fade', 'Full beard sculpt & razor edge', 'Hot towel steam massage', 'Complimentary hot drink'],
     isPopular: true,
-    recommendedFor: 'The complete grooming overhaul'
-  },
-  {
-    id: 'kids-haircut',
-    title: 'Kids Haircuts',
-    price: '£14',
-    duration: '30 mins',
-    category: 'Junior',
-    description: 'Patient, friendly haircut for kids with cool modern styles and attentive care in a welcoming environment.',
-    includes: ['Friendly barber care', 'Precision fade or trim', 'Fun styling finish'],
-    isPopular: true,
-    recommendedFor: 'Children & young gents'
+    recommendedFor: 'The complete grooming overhaul & best value'
   },
   {
     id: 'scissor-cut',
     title: 'Scissor Cut',
-    price: '£22',
-    duration: '45 mins',
+    price: '£18',
+    duration: '40 mins',
     category: 'Cuts',
     description: 'Hand-crafted scissor precision haircut for textured or classic medium to long styles.',
     includes: ['Hand scissor layering', 'Natural texture blending', 'Precision blow dry styling', 'Hot towel finish'],
@@ -90,7 +83,7 @@ export const SERVICES: Service[] = [
   {
     id: 'buzz-cut',
     title: 'Buzz Cut',
-    price: '£14',
+    price: '£12',
     duration: '20 mins',
     category: 'Cuts',
     description: 'Clean, uniform clipper cut all over with razor hairline edging & hot towel neck shave.',
@@ -98,20 +91,41 @@ export const SERVICES: Service[] = [
     recommendedFor: 'Low maintenance, ultra-clean short styles'
   },
   {
+    id: 'kids-haircut',
+    title: 'Kids Haircut',
+    price: '£13',
+    duration: '25 mins',
+    category: 'Junior',
+    description: 'Patient, friendly haircut for kids with cool modern styles and attentive care in a welcoming environment.',
+    includes: ['Friendly barber care', 'Precision fade or trim', 'Fun styling finish'],
+    isPopular: true,
+    recommendedFor: 'Children & young gents'
+  },
+  {
     id: 'restyle',
     title: 'Restyle',
-    price: '£26',
-    duration: '50 mins',
+    price: '£22',
+    duration: '45 mins',
     category: 'Cuts',
     description: 'Complete hairstyle transformation with in-depth personal consultation, precision restyling, and custom product finish.',
     includes: ['Detailed transformation consultation', 'Complete re-shaping & weight reduction', 'Custom blow-dry & product guide'],
     recommendedFor: 'Major length changes & new style directions'
   },
   {
+    id: 'head-massage',
+    title: 'Head Massage',
+    price: '£15',
+    duration: '20 mins',
+    category: 'Wellness',
+    description: 'Revitalising head and scalp massage with essential hair tonic to relieve tension and boost circulation.',
+    includes: ['Scalp tension relief', 'Essential hair tonic application', 'Deep relaxation treatment'],
+    recommendedFor: 'Stress relief & scalp rejuvenation'
+  },
+  {
     id: 'hot-towel-shave',
     title: 'Hot Towel Shave',
-    price: '£18',
-    duration: '35 mins',
+    price: '£16',
+    duration: '30 mins',
     category: 'Beard',
     description: 'Traditional hot towel steam shave with straight razor, soothing essential oils and cold towel finish.',
     includes: ['Pre-shave essential oils', 'Dual hot towel steam prep', 'Straight razor full shave', 'Cooling post-shave balm'],
@@ -121,29 +135,29 @@ export const SERVICES: Service[] = [
 
 export const TEAM: Barber[] = [
   {
-    id: 'master-barber',
-    name: 'Lead Master Barber',
-    role: 'Senior Barber & Stylist',
-    experience: '10+ Years Experience',
-    bio: "Lead barber at HYDE PARK BARBERS in Woodhouse, Leeds. Known for expert skin fades, sharp line-ups, friendly service and creating a relaxed environment.",
-    specialties: ['Precision Skin Fades', 'Beard Sculpting', 'Restyles', 'Hot Towel Shaves'],
+    id: 'hussain-master-barber',
+    name: 'Hussain',
+    role: 'Owner & Master Barber',
+    experience: '12+ Years Experience',
+    bio: "Founder and Lead Barber at Hussain Barbers in Hyde Park, Leeds. Famous for expert skin fades, warm hospitality, precision scissors, and welcoming every customer with tea or coffee.",
+    specialties: ['Precision Skin Fades', 'Beard Sculpting', 'Traditional Shaves', 'Student Restyles'],
     image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80',
-    instagram: 'https://www.instagram.com/hydeparkbarbers/',
+    facebook: 'https://www.facebook.com/17hussainbarber/?locale=en_GB',
     rating: 4.9,
-    reviewsCount: 68,
+    reviewsCount: 94,
     availableDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
   },
   {
-    id: 'fade-specialist',
-    name: 'Fade Specialist',
+    id: 'fade-specialist-leeds',
+    name: 'Senior Stylist',
     role: 'Skin Fade & Beard Specialist',
     experience: '8+ Years Experience',
-    bio: "Specialist in razor skin fades, textured crop styling, and sharp line-ups. Delivers clean, consistent cuts with great attention to detail.",
+    bio: "Specialist in razor skin fades, sharp beard line-ups, and modern textured crops. Dedicated to delivering top quality cuts at affordable prices.",
     specialties: ['Foil Skin Fades', 'Textured Crops', 'Razor Line-ups', 'Kids Haircuts'],
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
-    instagram: 'https://www.instagram.com/hydeparkbarbers/',
-    rating: 4.9,
-    reviewsCount: 45,
+    facebook: 'https://www.facebook.com/17hussainbarber/?locale=en_GB',
+    rating: 4.8,
+    reviewsCount: 64,
     availableDays: ['Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
   }
 ];
@@ -151,173 +165,162 @@ export const TEAM: Barber[] = [
 export const GALLERY: GalleryItem[] = [
   {
     id: 'g1',
-    title: 'HYDE PARK BARBERS Exterior',
+    title: 'Hussain Barbers Shopfront',
     category: 'Interior & Shop',
     image: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80',
-    caption: '11 Hyde Park Corner, 11 Woodhouse Ln, Woodhouse, Leeds LS6 1AF - Welcome to HYDE PARK BARBERS.',
-    location: '11 Hyde Park Corner'
+    caption: '65 Brudenell Grove, Leeds LS6 1HR - Welcome to Hussain Barbers in Hyde Park, Leeds.',
+    location: 'Brudenell Grove, Hyde Park'
   },
   {
     id: 'g2',
-    title: 'Barber Workstations',
+    title: 'Barber Workstations & Hospitality',
     category: 'Interior & Shop',
     image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80',
-    caption: 'Modern barbering stations equipped for precision skin fades and grooming.',
+    caption: 'Clean, modern barber stations where every client is offered fresh tea or coffee upon arrival.',
     location: 'Main Salon Floor'
   },
   {
     id: 'g3',
-    title: 'Clean Precision Skin Fade',
+    title: 'Sharp Skin Fade',
     category: 'Skin Fades & Cuts',
     image: 'https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1200&q=80',
-    caption: 'Seamless zero skin fade with textured top finish.',
-    location: 'Station 1'
+    caption: 'Crisp zero skin fade with textured top and sharp hairline edging.',
+    location: 'Hussain Barbers'
   },
   {
     id: 'g4',
-    title: 'Hot Towel Shave & Beard Trim',
+    title: 'Hot Towel & Beard Trim',
     category: 'Beard Grooming',
     image: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1200&q=80',
-    caption: 'Traditional hot towel steam treatment and razor beard line-up.',
-    location: 'Beard Station'
+    caption: 'Relaxing hot towel steam treatment with precise straight razor beard sculpt.',
+    location: 'Beard Grooming Station'
   },
   {
     id: 'g5',
-    title: 'Welcoming Atmosphere',
-    category: 'Interior & Shop',
+    title: 'Friendly Student & Local Community Hub',
+    category: 'Atmosphere',
     image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80',
-    caption: 'Friendly barbers and warm, relaxed atmosphere in Woodhouse, Leeds.',
-    location: 'HYDE PARK BARBERS'
+    caption: 'Trusted neighbourhood barbershop with warm atmosphere for students and locals alike.',
+    location: 'Hyde Park, Leeds'
   },
   {
     id: 'g6',
-    title: 'Classic Scissor Haircut',
+    title: 'Classic Scissor Cut',
     category: 'Skin Fades & Cuts',
     image: 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1200&q=80',
-    caption: 'Hand scissor layering for a sharp classic look.',
-    location: 'Station 2'
+    caption: 'Hand-crafted scissor layering for a timeless, natural haircut.',
+    location: 'Styling Station'
   }
 ];
 
-export const INSTAGRAM_POSTS: InstagramPost[] = [
+export const FACEBOOK_POSTS: FacebookPost[] = [
   {
-    id: 'ig1',
+    id: 'fb1',
     image: 'https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80',
-    caption: 'Sharp mid skin fade with textured top & razor line-up 🔥 Clean cut at HYDE PARK BARBERS! #hydeparkbarbers #leedsbarber #skinfade',
-    likes: 142,
-    comments: 18,
-    date: '2 DAYS AGO',
-    url: 'https://www.instagram.com/hydeparkbarbers/'
+    caption: 'Crisp mid skin fade with textured top & sharp razor line-up! Drop in at 65 Brudenell Grove or book ahead. Always welcomed with hot tea or coffee! ☕✂️ #HussainBarbers #LeedsBarbers #SkinFade #HydeParkLeeds',
+    likes: 87,
+    comments: 14,
+    shares: 5,
+    date: '3 DAYS AGO',
+    url: 'https://www.facebook.com/17hussainbarber/?locale=en_GB'
   },
   {
-    id: 'ig2',
+    id: 'fb2',
     image: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80',
-    caption: 'Full beard sculpt + hot towel treatment. Looking fresh for the weekend! 🧔💈 #beardgrooming #hydeparkbarbers #hottowelshave',
-    likes: 119,
-    comments: 12,
-    date: '4 DAYS AGO',
-    url: 'https://www.instagram.com/hydeparkbarbers/'
+    caption: 'Full Hair & Beard package with hot towel treatment for that fresh weekend look! Great value & top service guaranteed. 💈🔥 #BeardTrim #HussainBarbers #StudentBarberLeeds',
+    likes: 104,
+    comments: 11,
+    shares: 8,
+    date: '5 DAYS AGO',
+    url: 'https://www.facebook.com/17hussainbarber/?locale=en_GB'
   },
   {
-    id: 'ig3',
+    id: 'fb3',
     image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80',
-    caption: 'Welcome to HYDE PARK BARBERS at 11 Hyde Park Corner, Woodhouse! Walk-ins and Booksy appointments available 💈✂️',
-    likes: 198,
-    comments: 24,
+    caption: 'Thank you to our amazing clients for pushing us past 158+ Google Reviews with a 4.8★ rating! Proud to serve Hyde Park and all of Leeds! 🌟🙌 #48Stars #LeedsCommunity #BrudenellGrove',
+    likes: 162,
+    comments: 29,
+    shares: 12,
     date: '1 WEEK AGO',
-    url: 'https://www.instagram.com/hydeparkbarbers/'
+    url: 'https://www.facebook.com/17hussainbarber/?locale=en_GB'
   },
   {
-    id: 'ig4',
+    id: 'fb4',
     image: 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80',
-    caption: 'Low skin fade transformation with natural scissor layering. Always delivering quality craftsmanship 👌 #woodhouseleeds #barberlife',
-    likes: 156,
-    comments: 15,
-    date: '1 WEEK AGO',
-    url: 'https://www.instagram.com/hydeparkbarbers/'
-  },
-  {
-    id: 'ig5',
-    image: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80',
-    caption: 'Precision razor edging & sharp cheek line. Details matter at HYDE PARK BARBERS! ✨ #sharpedge #barbershopleeds',
-    likes: 134,
-    comments: 9,
+    caption: 'Precision scissor work and classical restyling for our student clients back for term! Drop by for your fresh trim today. ✂️📚 #StudentDiscount #HydeParkBarber #LeedsUniversity',
+    likes: 95,
+    comments: 8,
+    shares: 4,
     date: '2 WEEKS AGO',
-    url: 'https://www.instagram.com/hydeparkbarbers/'
-  },
-  {
-    id: 'ig6',
-    image: 'https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=80',
-    caption: 'Kids haircuts made easy and fun! Loved by parents and kids alike in Woodhouse, Leeds 👦✂️ #kidsbarber #hydeparkbarbers',
-    likes: 175,
-    comments: 21,
-    date: '2 WEEKS AGO',
-    url: 'https://www.instagram.com/hydeparkbarbers/'
+    url: 'https://www.facebook.com/17hussainbarber/?locale=en_GB'
   }
 ];
 
 export const REVIEWS: Review[] = [
   {
     id: 'r1',
-    author: 'Verified Customer',
+    author: 'Satisfied Customer',
     rating: 5,
-    date: '1 week ago',
-    service: 'Kids Haircut',
-    text: "The best one in the area. My kids are very happy with the service they received.",
+    date: 'Recent Google Review',
+    service: 'Classic Haircut',
+    text: "The staff were polite, friendly and professional. The haircut was excellent and the service was very welcoming.",
     verified: true
   },
   {
     id: 'r2',
-    author: 'Happy Client',
+    author: 'Leeds Student',
     rating: 5,
-    date: '2 weeks ago',
-    service: 'Classic Haircut',
-    text: "Great customer service and a warm welcome, accompanied by a great haircut.",
+    date: 'Recent Google Review',
+    service: 'Skin Fade & Beard Trim',
+    text: "A truly friendly and affordable barber in Leeds, especially for students. Always welcomed with a warm smile and a comforting cup of tea.",
     verified: true
   },
   {
     id: 'r3',
-    author: 'Woodhouse Resident',
+    author: 'Local Client',
     rating: 5,
-    date: '3 weeks ago',
-    service: 'Haircut & Shave',
-    text: "Very good haircut and shave in a really relaxed environment.",
+    date: 'Recent Google Review',
+    service: 'Hair & Beard Package',
+    text: "Great value, fantastic service and always offered tea or coffee. Highly recommended.",
     verified: true
   },
   {
     id: 'r4',
-    author: 'Leeds Client',
+    author: 'Brudenell Resident',
     rating: 5,
-    date: '1 month ago',
+    date: 'Verified Client',
     service: 'Skin Fade',
-    text: "Top quality skin fade every time! The barbers are skilled, friendly, and attentive.",
+    text: "Top quality skin fade every time! Hussain and the team are skilled, warm and extremely consistent.",
     verified: true
   },
   {
     id: 'r5',
-    author: 'Regular Customer',
+    author: 'Regular Client',
     rating: 5,
-    date: '1 month ago',
-    service: 'Hair & Beard Package',
-    text: "Best barber experience in Leeds! Great atmosphere, 5 star customer service.",
+    date: 'Verified Client',
+    service: 'Hot Towel Shave',
+    text: "Best barbershop experience in Hyde Park! Welcoming hospitality, great prices and exceptional haircuts.",
     verified: true
   }
 ];
 
 export const BRAND_STATS = [
-  { value: '113+', label: 'Google Reviews', prefix: '' },
-  { value: '4.9★', label: 'Average Rating', prefix: '' },
-  { value: '1200+', label: 'Happy Clients', prefix: '' },
+  { value: '158+', label: 'Google Reviews', prefix: '' },
+  { value: '4.8★', label: 'Average Rating', prefix: '' },
+  { value: '2500+', label: 'Happy Clients', prefix: '' },
   { value: '100%', label: 'Customer Satisfaction', prefix: '' }
 ];
 
 export const MARQUEE_ITEMS = [
-  'HYDE PARK BARBERS',
-  'WOODHOUSE LEEDS',
-  '11 HYDE PARK CORNER',
-  '4.9★ RATED (113 REVIEWS)',
+  'HUSSAIN BARBERS',
+  'HYDE PARK LEEDS',
+  '65 BRUDENELL GROVE',
+  '4.8★ RATED (158 REVIEWS)',
+  'COMPLIMENTARY TEA & COFFEE',
   'PRECISION SKIN FADES',
-  'EXPERT BEARD GROOMING',
-  'HOT TOWEL SHAVES',
-  '@HYDEPARKBARBERS'
+  'BEARD TRIMS & SHAVES',
+  '+44 7765 365536'
 ];
+
+export const INSTAGRAM_POSTS = FACEBOOK_POSTS;
+

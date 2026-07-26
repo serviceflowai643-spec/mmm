@@ -3,7 +3,7 @@ export interface Service {
   title: string;
   price: string;
   duration: string;
-  category: 'Cuts' | 'Beard' | 'Combos' | 'Packages' | 'Junior';
+  category: 'Cuts' | 'Beard' | 'Combos' | 'Packages' | 'Junior' | 'Wellness';
   description: string;
   includes: string[];
   recommendedFor?: string;
@@ -19,7 +19,8 @@ export interface Barber {
   bio: string;
   specialties: string[];
   image: string;
-  instagram: string;
+  facebook?: string;
+  instagram?: string;
   rating: number;
   reviewsCount: number;
   availableDays: string[];
@@ -28,7 +29,7 @@ export interface Barber {
 export interface GalleryItem {
   id: string;
   title: string;
-  category: 'Interior & Arcade' | 'Skin Fades & Cuts' | 'Beard Sculpting' | 'Espresso & Culture' | 'Interior & Shop' | 'Beard Grooming';
+  category: 'Interior & Shop' | 'Skin Fades & Cuts' | 'Beard Grooming' | 'Atmosphere';
   image: string;
   caption: string;
   location?: string;
@@ -56,15 +57,18 @@ export interface BookingFormState {
   notes: string;
 }
 
-export interface InstagramPost {
+export interface FacebookPost {
   id: string;
   image: string;
   caption: string;
   likes: number;
   comments: number;
+  shares: number;
   date: string;
   url: string;
 }
+
+export type InstagramPost = FacebookPost;
 
 export interface BusinessInfo {
   name: string;
@@ -74,10 +78,13 @@ export interface BusinessInfo {
   city: string;
   phone: string;
   email: string;
-  website?: string;
+  website: string;
+  facebook: string;
   instagram: string;
   booksyUrl: string;
   googleMapsUrl: string;
+  rating: number;
+  reviewsCount: number;
   hours: {
     day: string;
     time: string;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { TEAM } from '../data/shopData';
-import { Star, Instagram, Calendar, Award, CheckCircle, Scissors } from 'lucide-react';
+import { Star, Calendar, Award, CheckCircle } from 'lucide-react';
 
 interface TeamSectionProps {
   onSelectBarber: (barberId: string) => void;
@@ -45,12 +45,12 @@ export const TeamSection: React.FC<TeamSectionProps> = ({ onSelectBarber }) => {
             transition={{ delay: 0.2 }}
             className="text-base text-[#CFCFCF] font-light max-w-2xl mx-auto"
           >
-            Our dedicated team brings decades of combined expertise, passion, and personal attention to every single cut in Leeds.
+            Our dedicated barbers bring years of expertise, precision skills, and warm hospitality to every single haircut in Hyde Park, Leeds.
           </motion.p>
         </div>
 
         {/* Team Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {TEAM.map((barber, index) => (
             <motion.div
               key={barber.id}
@@ -65,7 +65,7 @@ export const TeamSection: React.FC<TeamSectionProps> = ({ onSelectBarber }) => {
                 <div className="relative h-80 sm:h-96 w-full overflow-hidden bg-[#090909]">
                   <img
                     src={barber.image}
-                    alt={`${barber.name} - ${barber.role} at Precision Barbers Leeds`}
+                    alt={`${barber.name} - ${barber.role} at Hussain Barbers Leeds`}
                     className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#171717] via-transparent to-transparent opacity-90" />

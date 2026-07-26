@@ -1,6 +1,6 @@
 {
-  "name": "HYDE PARK BARBERS",
-  "description": "Premium Barbering Experience in Woodhouse, Leeds",
+  "name": "Hussain Barbers",
+  "description": "Premium Barbering Experience in Hyde Park, Leeds",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
