@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Coffee, ShieldCheck, Scissors, Sparkles, MapPin, HeartHandshake } from 'lucide-react';
+import { Coffee, ShieldCheck, Scissors, Sparkles, MapPin, HeartHandshake, Navigation } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/shopData';
 
 export const AboutSection: React.FC = () => {
@@ -152,14 +152,26 @@ export const AboutSection: React.FC = () => {
             </div>
 
             <div className="p-6 rounded-2xl bg-[#171717]/80 border border-[#C9A227]/30 space-y-3">
-              <div className="flex items-center space-x-3">
-                <div className="p-2 rounded-lg bg-[#C9A227]/10 text-[#C9A227]">
-                  <MapPin className="w-5 h-5" />
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div className="flex items-center space-x-3">
+                  <div className="p-2 rounded-lg bg-[#C9A227]/10 text-[#C9A227] shrink-0">
+                    <MapPin className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-sm text-white uppercase tracking-wider">31a Great George St, Leeds LS1 3BB</h4>
+                    <p className="text-xs text-[#CFCFCF]">Conveniently located in the heart of Leeds</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-bold text-sm text-white uppercase tracking-wider">31a Great George St, Leeds LS1 3BB</h4>
-                  <p className="text-xs text-[#CFCFCF]">Conveniently located in the heart of Leeds</p>
-                </div>
+
+                <a
+                  href={BUSINESS_INFO.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-2 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-[#090909] border border-[#C9A227]/40 text-[#C9A227] hover:bg-[#C9A227] hover:text-[#090909] transition-all duration-300 shrink-0 self-start sm:self-auto"
+                >
+                  <Navigation className="w-3.5 h-3.5" />
+                  <span>Get Directions</span>
+                </a>
               </div>
             </div>
 

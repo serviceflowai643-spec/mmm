@@ -122,7 +122,7 @@ export const ContactSection: React.FC = () => {
                   className="flex items-center space-x-3 text-[#CFCFCF] hover:text-[#C9A227] transition-colors"
                 >
                   <Instagram className="w-4 h-4 text-[#C9A227]" />
-                  <span>@scissorhandsbarber</span>
+                  <span>@scissorhandsleeds</span>
                 </a>
               </div>
             </div>

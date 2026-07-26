@@ -8,9 +8,9 @@ export const BUSINESS_INFO: BusinessInfo = {
   city: "Leeds",
   phone: "+44 7522 846125",
   email: "contact@scissorhandsbarber.co.uk",
-  instagram: "https://instagram.com/scissorhandsbarber",
+  instagram: "https://www.instagram.com/scissorhandsleeds/",
   booksyUrl: "https://booksy.com",
-  googleMapsUrl: "https://maps.google.com/?q=31a+Great+George+St+Leeds+LS1+3BB",
+  googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=31a+Great+George+St,+Leeds+LS1+3BB",
   hours: [
     { day: "Monday", time: "09:00 - 18:00" },
     { day: "Tuesday", time: "09:00 - 18:00" },
@@ -118,7 +118,7 @@ export const TEAM: Barber[] = [
     bio: "Lead barber at Scissorhands Barber in Leeds. Known for fast, friendly service, precision haircuts and building a loyal community of satisfied clients.",
     specialties: ['Precision Haircuts', 'Modern Skin Fades', 'Beard Grooming', 'Student Restyles'],
     image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80',
-    instagram: 'https://instagram.com/scissorhandsbarber',
+    instagram: 'https://www.instagram.com/scissorhandsleeds/',
     rating: 4.8,
     reviewsCount: 142,
     availableDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -131,7 +131,7 @@ export const TEAM: Barber[] = [
     bio: "Specialist in razor skin fades, textured crop styling, and sharp line-ups. Sam combines technical precision with a friendly, welcoming approach.",
     specialties: ['Foil Skin Fades', 'Textured Crops', 'Razor Line-ups', 'Styling Advice'],
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
-    instagram: 'https://instagram.com/scissorhandsbarber',
+    instagram: 'https://www.instagram.com/scissorhandsleeds/',
     rating: 4.8,
     reviewsCount: 88,
     availableDays: ['Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -144,7 +144,7 @@ export const TEAM: Barber[] = [
     bio: "Expert in beard shaping, hot towel treatments, and hand-scissor work. Marco tailors every trim to fit the client's individual facial contours.",
     specialties: ['Beard Sculpting', 'Hot Towel Trims', 'Scissor Layering', 'Classic Styles'],
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80',
-    instagram: 'https://instagram.com/scissorhandsbarber',
+    instagram: 'https://www.instagram.com/scissorhandsleeds/',
     rating: 4.8,
     reviewsCount: 42,
     availableDays: ['Monday', 'Thursday', 'Friday', 'Saturday']

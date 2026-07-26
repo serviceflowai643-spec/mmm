@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
               className="inline-flex items-center space-x-2 text-xs text-[#C9A227] hover:underline"
             >
               <Instagram className="w-4 h-4" />
-              <span>@scissorhandsbarber</span>
+              <span>@scissorhandsleeds</span>
             </a>
           </div>
 
